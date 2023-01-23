@@ -1,0 +1,13 @@
+.menu__list {
+  display: flex;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.menu__item {
+  margin-right: 22px;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

@@ -1,0 +1,12 @@
+.hero {
+  padding-top: 30px;
+  padding-bottom: 60px;
+  background: url(/images/background/bg.png) center center / cover no-repeat;
+}
+
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
