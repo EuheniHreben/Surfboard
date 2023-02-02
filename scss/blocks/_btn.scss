@@ -1,9 +1,15 @@
 .btn {
   display: inline-flex;
-  padding: 20px 40px;
-  background-color: #FEDB3F;
+  padding: rem(20px) rem(40px);
+  background-color: $yellow;
   color: #000;
-  font-size: 16px;
+  font-size: rem(16px);
   font-weight: bolder;
-  border-radius: 100px;
+  border-radius: rem(100px);
+  text-transform: uppercase;
+  transition: box-shadow .5s;
+  
+  &:hover {
+    box-shadow: 0 0 rem(20px) 0 $yellow;
+  }
 }

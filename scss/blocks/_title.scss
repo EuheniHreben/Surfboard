@@ -1,12 +1,26 @@
 .title {
-  max-width: 600px;
+  max-width: rem(600px);
+  
+  @include phones {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: rem(20px);
+    padding-right: rem(20px);
+  }
 }
 
-.title__main {
-  margin-bottom: 20px;
+.title h1 {
+  margin-bottom: rem(20px);
   text-transform: uppercase;
+  
+  @include phones {
+    font-size: rem(32px);
+    text-align: center;
+  }
 }
 
-.title__subtitle {
-  margin-bottom: 40px;
+.title p {
+  margin-bottom: rem(40px);
 }

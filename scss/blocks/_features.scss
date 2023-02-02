@@ -1,13 +1,17 @@
 .features__list {
   display: flex;
+  
+  @include phones {
+   display: none; 
+  }
 }
 
 .features__item {
   display: flex;
-  margin-right: 30px;
-  max-width: 150px;
+  margin-right: rem(30px);
+  max-width: rem(150px);
 }
 
 .features__img {
-  margin-right: 10px;
+  margin-right: rem(10px);
 }

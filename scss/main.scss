@@ -1,6 +1,10 @@
+// components
+@import '_variables.scss';  
+@import '_adaptive.scss';  
 @import '_normalize.scss';  
 @import '_layout.scss';  
 
+// blocks
 @import 'blocks/_hero.scss';  
 @import 'blocks/_logo.scss';  
 @import 'blocks/_menu.scss';  

@@ -1,11 +1,16 @@
 .contact {
   display: flex;
   align-items: center;
+
   &::before {
     display: block;
     content: "";
-    background: url(/images/icons/Group\ 1.png);
-    width: 14px;
-    height: 14px;
+    background: url(../images/icons/Group1.png);
+    width: rem(14px);
+    height: rem(14px);
+  }
+
+  @include phones {
+   display: none; 
   }
 }

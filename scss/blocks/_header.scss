@@ -1,4 +1,10 @@
 .header {
   display: flex;
   align-items: center;
+
+  @include phones {
+    background-color: #1968B1;
+    height: 10%;
+    padding: rem(20px);
+  }
 }
