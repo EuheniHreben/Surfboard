@@ -1,15 +1,27 @@
 .btn {
   display: inline-flex;
+  text-align: center;
+  justify-content: center;
+  border: 1px solid transparent;
   padding: rem(20px) rem(40px);
+  margin: rem(4px);
   background-color: $yellow;
-  color: #000;
+  color: $black;
   font-size: rem(16px);
   font-weight: bolder;
-  border-radius: rem(100px);
+  border-radius: rem(36px);
   text-transform: uppercase;
-  transition: box-shadow .5s;
+  transition: background .5s, box-shadow .5s;
+  outline: none;
+  cursor: pointer; 
   
   &:hover {
     box-shadow: 0 0 rem(20px) 0 $yellow;
+  }
+  
+  &:active {
+    color: $yellow;
+    background-color: $black;
+    box-shadow: 0 0 rem(20px) 0 $black;
   }
 }

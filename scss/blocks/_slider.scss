@@ -1,3 +1,67 @@
 .slider {
   background-color: #F8FAF9;
+  padding: rem(50px) 0px;
+}
+
+.slider__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 88%;
+  
+  @include phones {
+    flex-direction: column;
+  }
+}
+
+.slider__img-box {
+  display: flex;
+  justify-content: center;
+}
+
+.slider__img {
+  margin-right: rem(55px);
+  
+  @include phones {
+    width: 50%;
+    margin-right: rem(0px);
+  }
+}
+
+.slider__info h2 {
+  margin-bottom: rem(24px);
+}
+
+.slider__text {
+  color: $gray;
+  margin-bottom: rem(24px);
+}
+
+.slider__desc-list {
+  display: flex;
+  margin-bottom: rem(24px);
+}
+
+.slider__desc-item {
+  margin-right: rem(55px);
+}
+
+.slider__price {
+  display: flex;
+  align-items: center;
+}
+
+.slider__price span {
+  margin-right: rem(28px);
+  font-size: rem(60px);
+}
+
+.slider__desc-value {
+  font-weight: bold;
 }

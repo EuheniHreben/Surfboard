@@ -1,0 +1,32 @@
+.form {
+  background-color: #000;
+  padding: rem(60px) 0px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.order h1 {
+  margin-bottom: rem(60px);
+}
+
+.form__list {
+  display: flex;
+}
+
+.form__group {
+  display: flex;
+  width: 100%;
+}
+
+.form__input {
+  flex: 1;
+  padding: rem(20px) rem(12px);
+  border-radius: 10px;
+}

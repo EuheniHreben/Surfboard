@@ -17,9 +17,13 @@
 
 .why__subtitle {
   color: #666;
+  max-width: 60%;
+  margin: 0px auto rem(50px) auto;
   text-align: center;
-  align-items: center;
-  margin-bottom: rem(50px);
+  
+  @include phones {
+    max-width: 90%;
+  }
 }
 
 .why__list {
