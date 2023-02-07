@@ -219,44 +219,59 @@
       <div class="container form-container">
         <h1>Закажите доску</h1>
         <form class="form__form">
-          <ul class="form__list">
-            <li class="form__item">
-              <div class="form__group">
-                <label for="name">Имя</label>
-                <input type="text" name="name" class="form__input" id="name">
-                <label for="phone">Телефон</label>
-                <input type="text" name="phone" class="form__input" id="phone">
-              </div>
-              <div class="form__group">
-                <label for="street">Улица</label>
-                <input type="text" name="street" class="form__input" id="street">
-              </div>
-              <div class="form__group">
-                <label for="house">Дом</label>
-                <input type="text" name="house" class="form__input" id="house">
-                <label for="building">Корпус</label>
-                <input type="text" name="building" class="form__input" id="building">
-                <label for="flat">Квартира</label>
-                <input type="text" name="flat" class="form__input" id="flat">
-                <label for="level">Этаж</label>
-                <input type="text" name="level" class="form__input" id="level">
-              </div>
-            </li>
-            <li class="form__item">
-              <div class="form__group">
-                <textarea name="" id="" cols="30" rows="10"></textarea>
-              </div>
-              <div class="form__group">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-              </div>
-              <div class="form__group">
-                <button type="submit" class="btn">Заказать</button>
-                <button type="reset" class="btn">Очистить</button>
-              </div>
-            </li>
-          </ul>
+          <div class="form__column">
+            <div class="form__group">
+              <label class="form__label">
+                <div class="form__title">Имя</div>
+                <input type="text" name="name" class="form__input" required>
+              </label>
+              <label class="form__label">
+                <div class="form__title">Телефон</div>
+                <input type="text" name="phone" class="form__input" required>
+              </label>
+            </div>
+            <div class="form__group">
+              <label class="form__label">
+                <div class="form__title">Улица</div>
+                <input type="text" name="street" class="form__input" required>
+              </label>
+            </div>
+            <div class="form__group">
+              <label class="form__label">
+                <div class="form__title">Дом</div>
+                <input type="text" name="house" class="form__input" required>
+              </label>
+              <label class="form__label">
+                <div class="form__title">Корпус</div>
+                <input type="text" name="building" class="form__input">
+              </label>
+              <label class="form__label">
+                <div class="form__title">Квартира</div>
+                <input type="text" name="flat" class="form__input" required>
+              </label>
+              <label class="form__label">
+                <div class="form__title">Этаж</div>
+                <input type="text" name="level" class="form__input" required>
+              </label>
+            </div>
+          </div>
+          <div class="form__column">
+            <div class="form__group">
+              <label class="form__label">
+                <div class="form__title">Комментарий</div>
+                <input type="text" name="level" class="form__input form__input--textarea" required>
+              </label>
+            </div>
+            <div class="form__group">
+              <input type="checkbox">
+              <input type="checkbox">
+              <input type="checkbox">
+            </div>
+            <div class="form__group">
+              <button type="submit" class="btn">Заказать</button>
+              <button type="reset" class="btn">Очистить</button>
+            </div>
+          </div>
         </form>
       </div>
     </section>
@@ -266,6 +281,20 @@
 
       </div>
     </section>
+
+    <nav class="fixed-menu">
+      <ul class="fixed-menu__list">
+        <li class="fixed-menu__item"><a href="#hero" class="fixed-menu__link"><div class="fixed-menu__text"><div class="fixed-menu__111">Главная</div></div></a></li>
+        <li class="fixed-menu__item"><a href="#why" class="fixed-menu__link"><div class="fixed-menu__text">О нас</div></a></li>
+        <li class="fixed-menu__item"><a href="#slider" class="fixed-menu__link"><div class="fixed-menu__text">Серфборды</div></a></li>
+        <li class="fixed-menu__item"><a href="#team" class="fixed-menu__link"><div class="fixed-menu__text">Команда</div></a></li>
+        <li class="fixed-menu__item"><a href="#accordeon" class="fixed-menu__link"><div class="fixed-menu__text">Меню</div></a></li>
+        <li class="fixed-menu__item"><a href="#reviews" class="fixed-menu__link"><div class="fixed-menu__text">Отзывы</div></a></li>
+        <li class="fixed-menu__item"><a href="#video" class="fixed-menu__link"><div class="fixed-menu__text">Как мы работаем</div></a></li>
+        <li class="fixed-menu__item"><a href="#form" class="fixed-menu__link"><div class="fixed-menu__text">Сделать заказ</div></a></li>
+        <li class="fixed-menu__item"><a href="#map" class="fixed-menu__link"><div class="fixed-menu__text">Контакты</div></a></li>
+      </ul>
+    </nav>
 
   </div>
 </body>

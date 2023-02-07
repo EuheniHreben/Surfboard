@@ -32,13 +32,13 @@
   opacity: 0;
   background-color: #d6d6d6;
   padding: rem(14px);
-  transition: opacity 1s;
+  transition: opacity .5s;
   border-radius: 5px;
   min-width: rem(300px);
 }
 
 .dropdown__item {
-  display: flex;
+  display: inline-flex;
   margin-bottom: rem(10px);
   
   &:last-child {
