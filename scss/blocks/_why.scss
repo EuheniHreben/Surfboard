@@ -33,27 +33,27 @@
   
   @include phones {
       flex-direction: column;
+    }
   }
-}
-
-.why__item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 25%;
-  position: relative;
-
-  &::before {
-    display: block;
-    position: absolute;
-    content: "";
-    width: 67px;
-    height: 21px;
-    background: url(../images/icons/circles.png);
-    top: 18%;
-    right: -34%;
-
-    @include phones {
+  
+  .why__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 25%;
+    position: relative;
+    
+    &::before {
+      display: block;
+      position: absolute;
+      content: "";
+      width: 67px;
+      height: 21px;
+      background: url(../images/icons/circles.png);
+      top: 18%;
+      right: -34%;
+      
+      @include phones {
       display: none;
     }
   }
