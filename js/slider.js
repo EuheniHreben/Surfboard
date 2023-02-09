@@ -1,9 +1,9 @@
 const slider = $('.slider').bxSlider({
   pager: false,
   controls:false, 
-  speed: 800,
+  speed: 1100,
   auto: true,
-  pause: 6000
+  pause: 7000
 });
 
 $('.slider-controls__arrow--left').click(e => {

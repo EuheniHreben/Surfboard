@@ -52,7 +52,7 @@
   
   @include phones {
     flex-direction: column;
-    gap: 0px;
+    gap: 4px;
   }
 }
 
@@ -70,7 +70,8 @@
 .slider__img {
   
   @include phones {
-    width: 60%;
+    // width: 60%;
+    max-height: rem(300px);
     margin-right: rem(0px);
   }
 }
@@ -85,7 +86,7 @@
 }
 
 .slider__info h2 {
-  margin-bottom: rem(24px);
+  margin-bottom: rem(28px);
 }
 
 .slider__text {
@@ -96,9 +97,10 @@
 .slider__info-list {
   display: flex;
   margin-bottom: rem(24px);
-
+  
   @include phones {
     justify-content: center;
+    margin-bottom: rem(14px);
   }
 }
 
@@ -120,6 +122,7 @@
   
   @include phones {
     justify-content: center;
+    padding-bottom: rem(14px);
   }
 }
 

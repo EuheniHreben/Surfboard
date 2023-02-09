@@ -484,8 +484,8 @@ h3 {
   .btn:active {
     color: #FEDB3F;
     background-color: #292929;
-    -webkit-box-shadow: 0 0 1.1111111111rem 0 #292929;
-            box-shadow: 0 0 1.1111111111rem 0 #292929; }
+    -webkit-box-shadow: 0 0 0.8888888889rem 0 #292929;
+            box-shadow: 0 0 0.8888888889rem 0 #292929; }
 
 .title {
   max-width: 33.3333333333rem; }
@@ -710,7 +710,7 @@ h3 {
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column;
-      gap: 0px; } }
+      gap: 4px; } }
 
 .slider__img-box {
   display: -webkit-box;
@@ -728,7 +728,7 @@ h3 {
 
 @media (max-width: 480px) {
   .slider__img {
-    width: 60%;
+    max-height: 16.6666666667rem;
     margin-right: 0rem; } }
 
 .slider__info {
@@ -739,7 +739,7 @@ h3 {
       text-align: center; } }
 
 .slider__info h2 {
-  margin-bottom: 1.3333333333rem; }
+  margin-bottom: 1.5555555556rem; }
 
 .slider__text {
   color: #666666;
@@ -754,7 +754,8 @@ h3 {
     .slider__info-list {
       -webkit-box-pack: center;
           -ms-flex-pack: center;
-              justify-content: center; } }
+              justify-content: center;
+      margin-bottom: 0.7777777778rem; } }
 
 .slider__info-item {
   padding-right: 3.0555555556rem; }
@@ -776,7 +777,8 @@ h3 {
     .slider__price {
       -webkit-box-pack: center;
           -ms-flex-pack: center;
-              justify-content: center; } }
+              justify-content: center;
+      padding-bottom: 0.7777777778rem; } }
 
 .slider__price span {
   font-size: 3.3333333333rem;
