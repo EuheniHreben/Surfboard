@@ -121,6 +121,10 @@
 
     <section class="slider-section section" id="slider">
       <div class="container">
+        <div class="slider-controls">
+          <a href="#" class="slider-controls__arrow slider-controls__arrow--left"></a>
+          <a href="#" class="slider-controls__arrow slider-controls__arrow--right"></a>
+        </div>
         <ul class="slider">
           <li class="slider__item">
             <div class="slider__img-box">
@@ -168,18 +172,19 @@
                 </ul>
               </div>
               <h2>Лонгборд 2.0</h2>
-              <p class="slider__text">Устойчивая доска для новичков. На них легко лежать, сидеть, грести, разгребаться на волны и ехать.
+              <div class="slider__text">Устойчивая доска для новичков. На них легко лежать, сидеть, грести, разгребаться
+                на волны и ехать.
                 Размер и плавучесть доски позволяет брать очень маленькие и пологие волны и не спеша, не прилагая особых
                 усилий ехать по ним.
-              </p>
-              <ul class="slider__desc-list">
-                <li class="slider__desc-item">
-                  <p>Длина доски</p>
-                  <p class="slider__desc-value">от 2,5 метров</p>
+              </div>
+              <ul class="slider__info-list">
+                <li class="slider__info-item">
+                  <div class="slider__info-name">Длина доски</div>
+                  <div class="slider__info-value">от 2,5 метров</div>
                 </li>
-                <li class="slider__desc-item">
-                  <p>Ширина доски</p>
-                  <p class="slider__desc-value">от 40 сантиметров</p>
+                <li class="slider__info-item">
+                  <div class="slider__info-name">Ширина доски</div>
+                  <div class="slider__info-value">от 40 сантиметров</div>
                 </li>
               </ul>
               <div class="slider__price">
@@ -233,18 +238,20 @@
                   </li>
                 </ul>
               </div>
-              <h2>Лонгборд 2.0</h2>
-              <p class="slider__text">Самые быстрые доски для профессионалов. Размеры шортбордов позволяют быстро набирать скорость, делать различные трюки на волне, включая резкие повороты и развороты, флоатеры (проезды по самому гребню волны), различные прыжки с вращениями или без, а также катание 
-                в трубах.                
-              </p>
-              <ul class="slider__desc-list">
-                <li class="slider__desc-item">
-                  <p>Длина доски</p>
-                  <p class="slider__desc-value">от 1,5 метров</p>
+              <h2>Шортборд</h2>
+              <div class="slider__text">Самые быстрые доски для профессионалов. Размеры шортбордов позволяют быстро
+                набирать скорость, делать различные трюки на волне, включая резкие повороты и развороты, флоатеры
+                (проезды по самому гребню волны), различные прыжки с вращениями или без, а также катание
+                в трубах.
+              </div>
+              <ul class="slider__info-list">
+                <li class="slider__info-item">
+                  <div class="slider__info-name">Длина доски</div>
+                  <div class="slider__info-value">от 1,5 метров</div>
                 </li>
-                <li class="slider__desc-item">
-                  <p>Ширина доски</p>
-                  <p class="slider__desc-value">от 30 сантиметров</p>
+                <li class="slider__info-item">
+                  <div class="slider__info-name">Ширина доски</div>
+                  <div class="slider__info-value">от 30 сантиметров</div>
                 </li>
               </ul>
               <div class="slider__price">
@@ -350,15 +357,35 @@
 
     <nav class="fixed-menu">
       <ul class="fixed-menu__list">
-        <li class="fixed-menu__item"><a href="#hero" class="fixed-menu__link"><div class="fixed-menu__text"><div class="fixed-menu__111">Главная</div></div></a></li>
-        <li class="fixed-menu__item"><a href="#why" class="fixed-menu__link"><div class="fixed-menu__text">О нас</div></a></li>
-        <li class="fixed-menu__item"><a href="#slider" class="fixed-menu__link"><div class="fixed-menu__text">Серфборды</div></a></li>
-        <li class="fixed-menu__item"><a href="#team" class="fixed-menu__link"><div class="fixed-menu__text">Команда</div></a></li>
-        <li class="fixed-menu__item"><a href="#accordeon" class="fixed-menu__link"><div class="fixed-menu__text">Меню</div></a></li>
-        <li class="fixed-menu__item"><a href="#reviews" class="fixed-menu__link"><div class="fixed-menu__text">Отзывы</div></a></li>
-        <li class="fixed-menu__item"><a href="#video" class="fixed-menu__link"><div class="fixed-menu__text">Как мы работаем</div></a></li>
-        <li class="fixed-menu__item"><a href="#form" class="fixed-menu__link"><div class="fixed-menu__text">Сделать заказ</div></a></li>
-        <li class="fixed-menu__item"><a href="#map" class="fixed-menu__link"><div class="fixed-menu__text">Контакты</div></a></li>
+        <li class="fixed-menu__item"><a href="#hero" class="fixed-menu__link">
+            <div class="fixed-menu__text">
+              <div class="fixed-menu__111">Главная</div>
+            </div>
+          </a></li>
+        <li class="fixed-menu__item"><a href="#why" class="fixed-menu__link">
+            <div class="fixed-menu__text">О нас</div>
+          </a></li>
+        <li class="fixed-menu__item"><a href="#slider" class="fixed-menu__link">
+            <div class="fixed-menu__text">Серфборды</div>
+          </a></li>
+        <li class="fixed-menu__item"><a href="#team" class="fixed-menu__link">
+            <div class="fixed-menu__text">Команда</div>
+          </a></li>
+        <li class="fixed-menu__item"><a href="#accordeon" class="fixed-menu__link">
+            <div class="fixed-menu__text">Меню</div>
+          </a></li>
+        <li class="fixed-menu__item"><a href="#reviews" class="fixed-menu__link">
+            <div class="fixed-menu__text">Отзывы</div>
+          </a></li>
+        <li class="fixed-menu__item"><a href="#video" class="fixed-menu__link">
+            <div class="fixed-menu__text">Как мы работаем</div>
+          </a></li>
+        <li class="fixed-menu__item"><a href="#form" class="fixed-menu__link">
+            <div class="fixed-menu__text">Сделать заказ</div>
+          </a></li>
+        <li class="fixed-menu__item"><a href="#map" class="fixed-menu__link">
+            <div class="fixed-menu__text">Контакты</div>
+          </a></li>
       </ul>
     </nav>
 
