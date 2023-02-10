@@ -3,7 +3,7 @@ const slider = $('.slider').bxSlider({
   controls:false, 
   speed: 1100,
   auto: true,
-  pause: 7000
+  pause: 4000
 });
 
 $('.slider-controls__arrow--left').click(e => {
