@@ -14,6 +14,10 @@
 
 .form h1 {
   margin-bottom: rem(60px);
+
+  @include phones {
+    font-size: rem(30px);
+  }
 }
 
 .form__form {
