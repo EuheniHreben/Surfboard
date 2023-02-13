@@ -12,7 +12,7 @@
 }
 
 .title h1 {
-  margin-bottom: rem(20px);
+  margin-bottom: rem(34px);
   text-transform: uppercase;
   
   @include phones {
@@ -22,5 +22,6 @@
 }
 
 .title p {
-  margin-bottom: rem(40px);
+  font-size: rem(28px);
+  margin-bottom: rem(50px);
 }

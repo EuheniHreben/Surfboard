@@ -1,6 +1,7 @@
 .menu__list {
   display: flex;
   font-weight: bold;
+  font-size: rem(24px);
 
   @include phones {
     display: none;

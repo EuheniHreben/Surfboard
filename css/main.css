@@ -5,6 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700;800&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -317,7 +318,7 @@ html, body {
   height: 100%; }
 
 body {
-  font-family: 'Alegreya Sans', Arial, sans-serif;
+  font-family: "Alegreya Sans", Arial, sans-serif;
   color: #292929;
   line-height: 1.42;
   height: 100%;
@@ -362,15 +363,14 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 1040px; }
 
 h1 {
-  font-size: 4rem;
+  font-size: 3.5555555556rem;
   font-weight: bold;
-  line-height: 1.34; }
+  line-height: 1.2; }
 
 h2 {
   display: block;
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 2.7777777778rem; }
+  font-size: 2.6666666667rem;
+  font-weight: bold; }
 
 h3 {
   font-size: 1.3333333333rem;
@@ -414,7 +414,8 @@ h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-weight: bold; }
+  font-weight: bold;
+  font-size: 1.3333333333rem; }
   @media (max-width: 480px) {
     .menu__list {
       display: none; } }
@@ -430,7 +431,10 @@ h3 {
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
   @media (max-width: 480px) {
     .header {
       background-color: #1968B1;
@@ -464,13 +468,13 @@ h3 {
       -ms-flex-pack: center;
           justify-content: center;
   border: 1px solid transparent;
-  padding: 1.1111111111rem 2.2222222222rem;
+  padding: 1.4444444444rem 2.8888888889rem;
   margin: 0.2222222222rem;
   background-color: #FEDB3F;
   color: #292929;
-  font-size: 0.8888888889rem;
-  font-weight: bolder;
-  border-radius: 2rem;
+  font-size: 1.1111111111rem;
+  font-weight: 800;
+  border-radius: 2.4444444444rem;
   text-transform: uppercase;
   -webkit-transition: background .1s, -webkit-box-shadow .1s;
   transition: background .1s, -webkit-box-shadow .1s;
@@ -508,7 +512,7 @@ h3 {
       padding-right: 1.1111111111rem; } }
 
 .title h1 {
-  margin-bottom: 1.1111111111rem;
+  margin-bottom: 1.8888888889rem;
   text-transform: uppercase; }
   @media (max-width: 480px) {
     .title h1 {
@@ -516,7 +520,8 @@ h3 {
       text-align: center; } }
 
 .title p {
-  margin-bottom: 2.2222222222rem; }
+  font-size: 1.5555555556rem;
+  margin-bottom: 2.7777777778rem; }
 
 .contact {
   display: -webkit-box;
@@ -540,18 +545,20 @@ h3 {
   padding-bottom: 6.1111111111rem;
   position: relative; }
 
-.why h1 {
+.why h2 {
   text-transform: uppercase;
   color: #000;
   margin-bottom: 1.1111111111rem;
-  text-align: center; }
+  text-align: center;
+  font-size: 2.8888888889rem;
+  letter-spacing: 2px; }
   @media (max-width: 480px) {
-    .why h1 {
+    .why h2 {
       font-size: 1.7777777778rem; } }
 
 .why__subtitle {
   color: #666;
-  max-width: 60%;
+  max-width: 50%;
   margin: 0px auto 2.7777777778rem auto;
   text-align: center; }
   @media (max-width: 480px) {
@@ -562,9 +569,10 @@ h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 4.4444444444rem; }
   @media (max-width: 480px) {
     .why__list {
       -webkit-box-orient: vertical;
@@ -791,9 +799,15 @@ h3 {
 
 .form {
   background-color: #000;
-  padding: 3.3333333333rem 0px;
+  padding: 4.4444444444rem 0px;
   color: #fff;
-  position: relative; }
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  @media (max-width: 480px) {
+    .form {
+      padding: 0px; } }
 
 .form-container {
   display: -webkit-box;
@@ -803,18 +817,20 @@ h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start; }
 
-.form h1 {
-  margin-bottom: 3.3333333333rem; }
+.form h2 {
+  margin-bottom: 4.4444444444rem; }
   @media (max-width: 480px) {
-    .form h1 {
-      font-size: 1.6666666667rem; } }
+    .form h2 {
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+      font-size: 2.1111111111rem; } }
 
 .form__form {
   -webkit-box-align: center;
@@ -838,13 +854,16 @@ h3 {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1; }
+  @media (max-width: 480px) {
+    .form__column {
+      width: 96%; } }
 
 .form__group {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 0.8888888889rem;
-  margin-bottom: 0.5555555556rem; }
+  margin-bottom: 1rem; }
 
 .form__label {
   -webkit-box-flex: 1;
@@ -855,7 +874,7 @@ h3 {
   margin-bottom: 0.1666666667rem; }
 
 .form__input {
-  padding: 0.8888888889rem 0.6666666667rem;
+  padding: 1.1111111111rem 0.6666666667rem;
   background: #fff;
   font-family: 'Open Sans', Arial,  sans-serif;
   border-radius: 0.2777777778rem;
@@ -863,10 +882,14 @@ h3 {
   outline: none;
   resize: none;
   width: 100%; }
+  @media (max-width: 480px) {
+    .form__input {
+      padding: 0.5555555556rem 0.6666666667rem; } }
   .form__input:focus {
     border-color: #FEDB3F; }
 
 .form__input--textarea {
+  width: 100%;
   min-height: 8.3333333333rem;
   margin-bottom: 1.1111111111rem; }
 

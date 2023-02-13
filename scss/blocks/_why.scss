@@ -4,11 +4,13 @@
   position: relative;
 }
 
-.why h1 {
+.why h2 {
   text-transform: uppercase;
   color: #000;
   margin-bottom: rem(20px);
   text-align: center;
+  font-size: rem(52px);
+  letter-spacing: 2px;
 
     
   @include phones {
@@ -18,7 +20,7 @@
 
 .why__subtitle {
   color: #666;
-  max-width: 60%;
+  max-width: 50%;
   margin: 0px auto rem(50px) auto;
   text-align: center;
   
@@ -29,7 +31,8 @@
 
 .why__list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: rem(80px);
   
   @include phones {
       flex-direction: column;

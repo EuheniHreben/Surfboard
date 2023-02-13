@@ -1,22 +1,28 @@
 .form {
   background-color: #000;
-  padding: rem(60px) 0px;
+  padding: rem(80px) 0px;
   color: #fff;
   position: relative;
+  display: flex;
+  
+  @include phones {
+    padding: 0px;
+  }
 }
 
 .form-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content:flex-start;
 }
 
-.form h1 {
-  margin-bottom: rem(60px);
+.form h2 {
+  margin-bottom: rem(80px);
 
   @include phones {
-    font-size: rem(30px);
+    justify-content: space-around;
+    font-size: rem(38px);
   }
 }
 
@@ -33,12 +39,16 @@
 
 .form__column {
   flex: 1;
+
+  @include phones {
+    width: 96%;
+  }
 }
 
 .form__group {
   display: flex;
   gap: rem(16px);
-  margin-bottom: rem(10px);
+  margin-bottom: rem(18px);
 }
 
 .form__label {
@@ -50,7 +60,7 @@
 }
 
 .form__input {
-  padding: rem(16px) rem(12px);
+  padding: rem(20px) rem(12px);
   background: #fff;
   font-family: 'Open Sans', Arial,  sans-serif;
   border-radius: rem(5px);
@@ -58,6 +68,10 @@
   outline: none;
   resize: none;
   width: 100%;
+  
+  @include phones {
+    padding: rem(10px) rem(12px);
+  }
 
   &:focus {
     border-color: $yellow;
@@ -65,6 +79,7 @@
 }
 
 .form__input--textarea {
+  width: 100%;
   min-height: rem(150px);
   margin-bottom: rem(20px);
 }
