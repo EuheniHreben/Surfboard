@@ -2,7 +2,7 @@ body {
   font-size: $baseFontSize;
 
   @include phones {
-    font-size: 3.33333vmin;
+    font-size: $baseFontSize - 2px;
   }
 }
 
@@ -65,7 +65,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: rem(64px);
+  font-size: rem(72px);
   font-weight: bold;
   line-height: 1.2;
 }

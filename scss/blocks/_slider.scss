@@ -1,10 +1,10 @@
 .slider-section {
   background-color: #F8FAF9;
   padding: rem(50px) 0px;
+  display: flex;
   position: relative;
   align-items: center;
   justify-content: center;
-  display: flex;
 
   & .bx-wrapper {
     background-color: #F8FAF9;
@@ -52,7 +52,7 @@
   
   @include phones {
     flex-direction: column;
-    gap: 4px;
+    gap: 0px;
   }
 }
 
@@ -85,13 +85,25 @@
   }
 }
 
+.slider__dropdown {
+  margin-bottom: rem(50px);
+}
+
 .slider__info h2 {
-  margin-bottom: rem(28px);
+  margin-bottom: rem(18px);
+  
+  @include phones {
+    margin-bottom: rem(0px);
+  }
 }
 
 .slider__text {
   color: $gray;
   margin-bottom: rem(24px);
+
+  @include phones {
+    line-height: 1.1;
+  }
 }
 
 .slider__info-list {
