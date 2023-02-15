@@ -6,7 +6,7 @@
   display: flex;
   
   @include phones {
-    padding: 0px;
+    padding: rem(20px) 0px;
   }
 }
 
@@ -18,22 +18,23 @@
 }
 
 .form h2 {
-  margin-bottom: rem(80px);
-
+  margin-bottom: rem(40px);
+  
   @include phones {
     justify-content: space-around;
     font-size: rem(38px);
+    margin-bottom: rem(20px);
   }
 }
 
 .form__form {
-  align-items: center;
   display: flex;
   justify-content: center;
   gap: rem(20px);
-
+  
   @include phones {
     flex-direction: column;
+    gap: rem(0px);
   }
 }
 
@@ -41,7 +42,7 @@
   flex: 1;
 
   @include phones {
-    width: 96%;
+    width: 98%;
   }
 }
 
@@ -80,6 +81,10 @@
 
 .form__input--textarea {
   width: 100%;
-  min-height: rem(150px);
+  min-height: rem(250px);
   margin-bottom: rem(20px);
+  
+  @include phones {
+    min-height: rem(80px);
+  }
 }

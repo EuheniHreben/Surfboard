@@ -48,7 +48,9 @@
               </li>
             </ul>
           </nav>
-          <a href="tel:+88009039090" class="contact header__contact">8 800 903 90 90</a>
+          <address class="address">
+            <a href="tel:+88009039090" class="address__phone address__phone--header">8 800 903 90 90</a>
+          </address>
         </header>
         <div class="title">
           <h1>Профессиональные доски для серфинга</h1>
@@ -352,7 +354,7 @@
 
     <section class="form section" id="form">
       <div class="container form-container">
-        <h2>Закажите доску</h2>
+        <h2>Закажите доставку</h2>
         <form class="form__form" method="get">
           <div class="form__column">
             <div class="form__group">
@@ -412,12 +414,41 @@
     </section>
 
     <section class="map section" id="map">
-      <div class="container">
-
-      </div>
+      <footer class="footer">
+        <div class="container footer-container">
+          <address class="address">
+            <div class="address__city">Москва, ул.Новый Арбат, д.31/12</div>
+            <div class="address__phone">8 800 903 90 90</div>
+          </address>
+          <div class="social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a href="" class="social__link">
+                  <img src="./images/icons/vk.png" alt="" class="social__img">
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="" class="social__link">
+                  <img src="./images/icons/f.png" alt="" class="social__img">
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="" class="social__link">
+                  <img src="./images/icons/in.png" alt="" class="social__img">
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="" class="social__link">
+                  <img src="./images/icons/tv.png" alt="" class="social__img">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
     </section>
 
-    <nav class="fixed-menu">
+    <!-- <nav class="fixed-menu">
       <ul class="fixed-menu__list">
         <li class="fixed-menu__item"><a href="#hero" class="fixed-menu__link">
             <div class="fixed-menu__text">
@@ -449,12 +480,15 @@
             <div class="fixed-menu__text">Контакты</div>
           </a></li>
       </ul>
-    </nav>
+    </nav> -->
 
     <script src="./js/jquery-3.6.3.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <script src="./js/slider.js"></script>
     <script src="./js/team.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
+    </script>
+    <script src="./js/map.js"></script>
 
   </div>
 </body>

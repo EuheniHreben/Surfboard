@@ -1,16 +1,23 @@
-.contact {
+.address__phone {
   display: flex;
   align-items: center;
+
+  @include phones {
+    text-align: center;
+    justify-content: center;
+  }
 
   &::before {
     display: block;
     content: "";
     background: url(../images/icons/Group1.png);
-    width: rem(14px);
-    height: rem(14px);
+    width: 14px;
+    height: 14px;
   }
 
+  &--header {
   @include phones {
-   display: none; 
+    display: none; 
+   }
   }
 }

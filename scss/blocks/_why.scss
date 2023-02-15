@@ -10,14 +10,13 @@
 .why h2 {
   text-transform: uppercase;
   color: #000;
-  margin-bottom: rem(20px);
   text-align: center;
   font-size: rem(52px);
   letter-spacing: 2px;
 
     
   @include phones {
-    font-size: rem(32px);
+    font-size: rem(36px);
   }
 }
 
@@ -39,7 +38,7 @@
   
   @include phones {
     flex-direction: column;
-    gap: rem(0px);
+    gap: rem(30px);
     }
   }
   
@@ -49,6 +48,7 @@
     align-items: center;
     max-width: 25%;
     position: relative;
+    line-height: 1.1;
     
     &::before {
       display: block;
@@ -85,6 +85,11 @@
   border-radius: 50%;
   margin-bottom: rem(20px);
   flex-shrink: 0;
+  
+  
+  @include phones {
+    margin-bottom: rem(0px);
+  }
 }
 
 .why__desc {
