@@ -3,4 +3,8 @@
   width: rem(55px);
   height: rem(40px);
   margin-right: rem(50px);
+  
+  @include phones {
+    margin-right: 0px;
+  }
 }

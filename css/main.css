@@ -386,7 +386,7 @@ h3 {
     .hero {
       padding-top: 0rem;
       padding-bottom: 0rem;
-      background: url(../images/background/bg.png) right 34% bottom/cover no-repeat; } }
+      background: url(../images/background/bg-mini.png); } }
 
 .hero-container {
   display: -webkit-box;
@@ -409,6 +409,9 @@ h3 {
   width: 3.0555555556rem;
   height: 2.2222222222rem;
   margin-right: 2.7777777778rem; }
+  @media (max-width: 480px) {
+    .logo__img {
+      margin-right: 0px; } }
 
 .menu__list {
   display: -webkit-box;
@@ -425,6 +428,77 @@ h3 {
   .menu__item:hover {
     text-decoration: underline; }
 
+.hamburger {
+  cursor: pointer;
+  display: none; }
+  @media (max-width: 480px) {
+    .hamburger {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; } }
+
+svg {
+  -webkit-transition: -webkit-transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 500ms cubic-bezier(0.4, 0, 0.2, 1); }
+
+.active svg {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg); }
+
+path {
+  -webkit-transition: stroke-dasharray 500ms cubic-bezier(0.4, 0, 0.2, 1), stroke-dashoffset 500ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: stroke-dasharray 500ms cubic-bezier(0.4, 0, 0.2, 1), stroke-dashoffset 500ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1), stroke-dasharray 500ms cubic-bezier(0.4, 0, 0.2, 1), stroke-dashoffset 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1), stroke-dasharray 500ms cubic-bezier(0.4, 0, 0.2, 1), stroke-dashoffset 500ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 500ms cubic-bezier(0.4, 0, 0.2, 1); }
+
+path:nth-child(1) {
+  -webkit-transform-origin: 36% 40%;
+          transform-origin: 36% 40%; }
+
+path:nth-child(2) {
+  stroke-dasharray: 29 299; }
+
+path:nth-child(3) {
+  -webkit-transform-origin: 35% 63%;
+          transform-origin: 35% 63%; }
+
+path:nth-child(4) {
+  stroke-dasharray: 29 299; }
+
+path:nth-child(5) {
+  -webkit-transform-origin: 61% 52%;
+          transform-origin: 61% 52%; }
+
+path:nth-child(6) {
+  -webkit-transform-origin: 62% 52%;
+          transform-origin: 62% 52%; }
+
+.active path:nth-child(1) {
+  -webkit-transform: translateX(9px) translateY(1px) rotate(45deg);
+          transform: translateX(9px) translateY(1px) rotate(45deg); }
+
+.active path:nth-child(2) {
+  stroke-dasharray: 225 299;
+  stroke-dashoffset: -72px; }
+
+.active path:nth-child(3) {
+  -webkit-transform: translateX(9px) translateY(1px) rotate(-45deg);
+          transform: translateX(9px) translateY(1px) rotate(-45deg); }
+
+.active path:nth-child(4) {
+  stroke-dasharray: 225 299;
+  stroke-dashoffset: -72px; }
+
+.active path:nth-child(5) {
+  -webkit-transform: translateX(9px) translateY(1px) rotate(-45deg);
+          transform: translateX(9px) translateY(1px) rotate(-45deg); }
+
+.active path:nth-child(6) {
+  -webkit-transform: translateX(9px) translateY(1px) rotate(45deg);
+          transform: translateX(9px) translateY(1px) rotate(45deg); }
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -438,8 +512,7 @@ h3 {
   @media (max-width: 480px) {
     .header {
       background-color: #1968B1;
-      height: 10%;
-      padding: 1.1111111111rem; } }
+      padding: 0px 1.1111111111rem; } }
 
 .features__list {
   display: -webkit-box;
@@ -545,15 +618,21 @@ h3 {
     display: block;
     content: "";
     background: url(../images/icons/Group1.png);
-    width: 14px;
-    height: 14px; }
+    width: 13px;
+    height: 15px; }
   @media (max-width: 480px) {
     .address__phone--header {
       display: none; } }
 
 .why {
   padding: 5.5555555556rem 0px;
-  position: relative; }
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
   @media (max-width: 480px) {
     .why {
       padding: 2.2222222222rem 0px; } }
@@ -671,7 +750,7 @@ h3 {
 
 .slider-section {
   background-color: #F8FAF9;
-  padding: 2.7777777778rem 0px;
+  padding: 1.6666666667rem 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -831,7 +910,10 @@ h3 {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
   @media (max-width: 480px) {
     .form {
       padding: 1.1111111111rem 0px; } }

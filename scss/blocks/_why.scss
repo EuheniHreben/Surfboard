@@ -1,6 +1,8 @@
 .why {
   padding: rem(100px) 0px;
   position: relative;
+  display: flex;
+  align-items: center;
   
   @include phones {
     padding: rem(40px) 0px;
