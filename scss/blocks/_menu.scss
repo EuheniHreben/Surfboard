@@ -2,10 +2,8 @@
   display: flex;
   font-weight: bold;
   font-size: rem(24px);
-
-  @include phones {
-    display: none;
-  }
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .menu__item {

@@ -1,0 +1,58 @@
+.reviews {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & h2 {
+    text-align: center;
+    margin-bottom: rem(42px);
+  }
+}
+
+.reviews__list {
+  display: flex;
+}
+
+.reviews__item {
+  display: flex;
+  background-color: #F8FAF9;
+  padding: rem(42px) rem(142px) rem(42px) rem(42px);
+  
+  @include phones {
+    flex-direction: column;
+    align-items: center;
+    padding: rem(50px) rem(30px);
+    text-align: center;
+  }
+}
+
+.reviews__img {
+
+  @include phones {
+    width: 130px;
+    height: 130px;
+  }
+}
+
+.reviews__desc {
+  padding-left: rem(40px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  @include phones {
+    padding-left: rem(0px);
+  }
+
+  & h3 {
+    margin-bottom: 14px;
+  }
+  
+  & p {
+    margin-bottom: 24px;
+  }
+
+  & div {
+    font-weight: bold;
+  }
+}
