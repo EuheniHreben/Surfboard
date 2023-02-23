@@ -5,18 +5,20 @@
 
   & h2 {
     text-align: center;
-    margin-bottom: rem(42px);
+    margin-bottom: rem(22px);
   }
 }
 
 .reviews__list {
   display: flex;
+  flex-direction: column;
 }
 
 .reviews__item {
   display: flex;
   background-color: #F8FAF9;
   padding: rem(42px) rem(142px) rem(42px) rem(42px);
+  margin-bottom: rem(20px);
   
   @include phones {
     flex-direction: column;
@@ -49,10 +51,36 @@
   }
   
   & p {
-    margin-bottom: 24px;
+    line-height: 1.1;
+    margin-bottom: rem(14px);
   }
 
   & div {
     font-weight: bold;
+  }
+}
+
+.reviews__icon-list {
+  display: flex;
+  justify-content: center;
+  gap: rem(20px);
+}
+
+.reviews__icon-img {
+  cursor: pointer;
+  border-radius: 50%;
+  border: 5px solid transparent;
+
+  @include phones {
+    width: 64px;
+    height: 64px;
+  }
+
+  &--active {
+    background-color: $yellow;
+  }
+
+  &:hover, &--active {
+    background-color: $yellow;
   }
 }

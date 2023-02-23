@@ -1,0 +1,29 @@
+.video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F8FAF9;
+
+  & h2 {
+    margin-bottom: rem(40px);
+  }
+}
+
+.video-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.video__img-box {
+  width: 70%;
+
+  @include phones {
+    width: 80%;
+  }
+}
+
+.video__img {
+  width: 100%;
+}

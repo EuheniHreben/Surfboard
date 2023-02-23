@@ -70,7 +70,6 @@
 .slider__img {
   
   @include phones {
-    // width: 60%;
     max-height: rem(300px);
     margin-right: rem(0px);
   }

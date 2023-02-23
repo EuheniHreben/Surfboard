@@ -7,20 +7,15 @@
   @include phones {
     padding: rem(40px) 0px;
   }
-}
 
-.why h2 {
-  text-transform: uppercase;
-  color: #000;
-  text-align: center;
-  font-size: rem(52px);
-  letter-spacing: 2px;
-
-    
-  @include phones {
-    font-size: rem(36px);
+  & h2 {
+    text-transform: uppercase;
+    color: #000;
+    text-align: center;
+    letter-spacing: 2px;
   }
 }
+
 
 .why__subtitle {
   color: #666;
@@ -60,7 +55,7 @@
       height: 21px;
       background: url(../images/icons/circles.png);
       top: 18%;
-      right: -34%;
+      right: -26%;
       
       @include phones {
       display: none;

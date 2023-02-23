@@ -1,0 +1,46 @@
+.accordeon {
+  background: url(../images/background/accordeon.png) center center / cover no-repeat;
+  // display: flex;
+  justify-content: center;
+  color: #fff;
+  position: relative;
+
+  & h2 {
+    padding-top: 10%;
+  }
+}
+
+.accordeon__list {
+  position: absolute;
+  display: flex;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+}
+
+.accordeon__img {
+  height: 100%; 
+  cursor: pointer;
+  transition: box-shadow .5s;
+  
+  &:hover {
+    box-shadow: 0 0 60px 15px #8ca3ad;
+  }
+
+  @include phones {
+    width: 80%;
+  }
+}
+
+.accordeon__link-title {
+  position: absolute;
+  font-size: rem(40px);
+  font-weight: 600;
+  bottom: 20%;
+  transform: rotate(270deg) translateY(-50%);
+}
+
+.accordeon__text {
+  display: none;
+}

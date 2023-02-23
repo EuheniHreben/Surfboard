@@ -1,3 +1,10 @@
+.logo__img-box {
+
+  @include phones {
+    padding: 0px rem(20px);
+  }
+}
+
 .logo__img {
   display: block;
   width: rem(55px);

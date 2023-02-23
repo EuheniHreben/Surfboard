@@ -31,18 +31,22 @@
   right: 9999px;
   opacity: 0;
   background-color: #d6d6d6;
-  padding: rem(14px);
-  transition: opacity .5s;
+  padding: rem(10px);
+  transition: opacity .3s;
   border-radius: 5px;
-  min-width: rem(300px);
+  width: rem(280px);
 }
 
 .dropdown__item {
   display: inline-flex;
+  align-items: center;
   margin-bottom: rem(10px);
+  width: 100%;
+
+
   
   &:last-child {
-    margin-bottom: rem(0px);
+    margin-bottom: 0px;
   }
 }
 
