@@ -300,10 +300,10 @@
             <div class="team__img-box">
               <img src="./images/Rectangle 4.png" alt="" class="team__img">
             </div>
-            <a href="#" class="team__title team__title--active">Борис Федорович</a>
+            <a href="#" class="team__name">Борис Федорович</a>
             <div class="team__desc">
               <div class="team__content">
-                <div class="team__img-box team__img-box--mini">
+                <div class="team__img-box team__img-box--phone">
                   <img src="./images/Rectangle 4.png" alt="" class="team__img">
                 </div>
                 <p class="team__job">Главный технолог</p>
@@ -315,10 +315,10 @@
             <div class="team__img-box">
               <img src="./images/Rectangle 4 (1).png" alt="" class="team__img">
             </div>
-            <a href="#" class="team__title">Ольга Невзорова</a>
+            <a href="#" class="team__name">Ольга Невзорова</a>
             <div class="team__desc">
               <div class="team__content">
-                <div class="team__img-box team__img-box--mini">
+                <div class="team__img-box team__img-box--phone">
                   <img src="./images/Rectangle 4 (1).png" alt="" class="team__img">
                 </div>
                 <p class="team__job">Дизайнер</p>
@@ -330,10 +330,10 @@
             <div class="team__img-box">
               <img src="./images/Rectangle 4 (2).png" alt="" class="team__img">
             </div>
-            <a href="#" class="team__title">Ингвар Нильсон</a>
+            <a href="#" class="team__name">Ингвар Нильсон</a>
             <div class="team__desc">
               <div class="team__content">
-                <div class="team__img-box team__img-box--mini">
+                <div class="team__img-box team__img-box--phone">
                   <img src="./images/Rectangle 4 (2).png" alt="" class="team__img">
                 </div>
                 <p class="team__job">Спортсмен</p>
@@ -345,10 +345,10 @@
             <div class="team__img-box">
               <img src="./images/Rectangle 4 (3).png" alt="" class="team__img">
             </div>
-            <a href="#" class="team__title">Екатерина Иванова</a>
+            <a href="#" class="team__name">Екатерина Иванова</a>
             <div class="team__desc">
               <div class="team__content">
-                <div class="team__img-box team__img-box--mini">
+                <div class="team__img-box team__img-box--phone">
                   <img src="./images/Rectangle 4 (3).png" alt="" class="team__img">
                 </div>
                 <p class="team__job">Тестировщик</p>
@@ -405,7 +405,7 @@
       <div class="container">
         <h2>Отзывы</h2>
         <ul class="reviews__list">
-          <li class="reviews__item">
+          <li class="reviews__item reviews__item--active" data-item="1">
             <div class="reviews__img-box">
               <img src="./images/review1.png" alt="" class="reviews__img">
             </div>
@@ -415,7 +415,7 @@
               <div>Ольга Макарова</div>
             </div>
           </li>
-          <!-- <li class="reviews__item">
+          <li class="reviews__item" data-item="2">
             <div class="reviews__img-box">
               <img src="./images/review2.jpg" alt="" class="reviews__img">
             </div>
@@ -426,7 +426,7 @@
               <div>Марк Брюлов</div>
             </div>
           </li>
-          <li class="reviews__item">
+          <li class="reviews__item" data-item="3">
             <div class="reviews__img-box">
               <img src="./images/review3.png" alt="" class="reviews__img">
             </div>
@@ -435,17 +435,23 @@
               <p>Я заказывал доски для своих детей. Мне было важно, чтобы они были устойчивые, так как безопасность детей на первом месте. Доски были изготовлены по индивидуальным замерам с учетом роста и веса каждого ребенка. Теперь дети катаются и им нравится!</p>
               <div>Василий Поперечный</div>
             </div>
-          </li> -->
+          </li>
         </ul>
-        <ul class="reviews__icon-list">
-          <li class="reviews__icon-item">
-            <img src="./images/icons/feedback(2).png" alt="" class="reviews__icon-img reviews__icon-img--active">
+        <ul class="reviews__icon-list" id="reviewAvatars">
+          <li class="reviews__icon-item reviews__icon-item--active">
+            <a href="#" class="reviews__icon-link" data-open="1">
+              <img src="./images/icons/feedback(2).png" alt="" class="reviews__icon-img">
+            </a>
           </li>
           <li class="reviews__icon-item">
-            <img src="./images/icons/feedback(1).png" alt="" class="reviews__icon-img">
+            <a href="#" class="reviews__icon-link" data-open="2">
+              <img src="./images/icons/feedback(1).png" alt="" class="reviews__icon-img">
+            </a>
           </li>
           <li class="reviews__icon-item">
-            <img src="./images/icons/feedback.png" alt="" class="reviews__icon-img">
+            <a href="#" class="reviews__icon-link" data-open="3">
+              <img src="./images/icons/feedback.png" alt="" class="reviews__icon-img">
+            </a>
           </li>
         </ul>
       </div>
@@ -594,9 +600,9 @@
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <script src="./js/hamburger.js"></script>
     <script src="./js/slider.js"></script>
+    <script src="./js/review.js"></script>
     <script src="./js/team.js"></script>
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
-    </script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
     <script src="./js/map.js"></script>
 
   </div>
