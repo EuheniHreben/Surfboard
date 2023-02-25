@@ -1383,6 +1383,9 @@ path:nth-child(6) {
       -ms-flex-pack: center;
           justify-content: center; }
 
+.team__job {
+  font-weight: 600; }
+
 .team__text {
   color: #666666a8; }
 
