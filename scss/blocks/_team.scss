@@ -50,14 +50,14 @@
     content: "";
     display: block;
     z-index: 1000;
-    border: 6px solid transparent;
+    border: 7px solid transparent;
     width: 0;
     height: 0;
     cursor: pointer;
     margin-left: 5px;
     transform: translateY(3px) rotate(0deg);
     border-color: $black transparent transparent transparent;  
-    transition: transform .3s ease-out;
+    transition: transform .4s ease-out;
     
     @include phones {
       transform: translateY(3px) rotate(0deg);
@@ -66,7 +66,7 @@
 
   &--active {
     &::after {
-      transform:translateY(-3px) rotate(-180deg);
+      transform:translateY(-3px) rotate(180deg);
     }
   }
 }

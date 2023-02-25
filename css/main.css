@@ -608,6 +608,16 @@ path:nth-child(6) {
     -webkit-box-shadow: 0 0 0.8888888889rem 0 #292929;
             box-shadow: 0 0 0.8888888889rem 0 #292929; }
 
+.btn_type_second {
+  background-color: #666666;
+  color: #292929; }
+  .btn_type_second:hover {
+    -webkit-box-shadow: 0 0 1.1111111111rem 0 #666666;
+            box-shadow: 0 0 1.1111111111rem 0 #666666; }
+  .btn_type_second:active {
+    -webkit-box-shadow: 0 0 0.8888888889rem 0 #292929;
+            box-shadow: 0 0 0.8888888889rem 0 #292929; }
+
 .title {
   max-width: 50%;
   display: -webkit-box;
@@ -1044,6 +1054,9 @@ path:nth-child(6) {
     .form__input--textarea {
       min-height: 4.4444444444rem; } }
 
+input {
+  margin-right: 0.5555555556rem; }
+
 .reviews {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1259,7 +1272,7 @@ path:nth-child(6) {
     content: "";
     display: block;
     z-index: 1000;
-    border: 6px solid transparent;
+    border: 7px solid transparent;
     width: 0;
     height: 0;
     cursor: pointer;
@@ -1267,17 +1280,17 @@ path:nth-child(6) {
     -webkit-transform: translateY(3px) rotate(0deg);
             transform: translateY(3px) rotate(0deg);
     border-color: #292929 transparent transparent transparent;
-    -webkit-transition: -webkit-transform .3s ease-out;
-    transition: -webkit-transform .3s ease-out;
-    transition: transform .3s ease-out;
-    transition: transform .3s ease-out, -webkit-transform .3s ease-out; }
+    -webkit-transition: -webkit-transform .4s ease-out;
+    transition: -webkit-transform .4s ease-out;
+    transition: transform .4s ease-out;
+    transition: transform .4s ease-out, -webkit-transform .4s ease-out; }
     @media (max-width: 480px) {
       .team__name:after {
         -webkit-transform: translateY(3px) rotate(0deg);
                 transform: translateY(3px) rotate(0deg); } }
   .team__name--active::after {
-    -webkit-transform: translateY(-3px) rotate(-180deg);
-            transform: translateY(-3px) rotate(-180deg); }
+    -webkit-transform: translateY(-3px) rotate(180deg);
+            transform: translateY(-3px) rotate(180deg); }
 
 .team__img-box {
   margin-bottom: 24px; }
