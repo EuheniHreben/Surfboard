@@ -3,7 +3,6 @@
   right: 2%;
   top: 24%;
   z-index: 1000;
-  
   @include phones {
     display: none;
   }
@@ -29,7 +28,6 @@
   border: 1px solid transparent;
   position: relative;
   margin: 14px;
-  
   &::before {
     content: "";
     display: block;
@@ -43,7 +41,6 @@
     transform: translate(-50%, -50%);
     position: absolute;
   }
-  
   &:hover {
     .fixed-menu__text {
       left: -160px;

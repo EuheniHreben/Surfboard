@@ -3,8 +3,7 @@
   justify-content: center;
   align-items: center;
   background-color: #F8FAF9;
-
-  & h2 {
+  h2 {
     margin-bottom: rem(40px);
   }
 }
@@ -18,7 +17,6 @@
 
 .video__img-box {
   width: 70%;
-
   @include phones {
     width: 80%;
   }

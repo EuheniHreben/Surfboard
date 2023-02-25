@@ -1,14 +1,12 @@
 .dropdown {
   position: relative;
   display: inline-flex;
-
   &:hover {
     .dropdown__list {
       left: 100%;
       opacity: 1;
     }
   }
-  
   @include phones {
     display: none;
   }
@@ -42,9 +40,6 @@
   align-items: center;
   margin-bottom: rem(10px);
   width: 100%;
-
-
-  
   &:last-child {
     margin-bottom: 0px;
   }

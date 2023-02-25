@@ -3,11 +3,9 @@
   justify-content: center;
   align-items: center;
   position: relative;
-
-  & h2 {
+  h2 {
     text-align: center;
     margin-bottom: rem(50px);
-    
     @include phones {
       font-size: rem(36px);
     }
@@ -18,7 +16,6 @@
   display: flex;
   justify-content: center;
   min-height: 450px;
-  
   @include phones {
     flex-direction: column;
     align-items: center;
@@ -29,7 +26,6 @@
   width: 22%;
   text-align: center;
   margin-right: rem(20px);
-  
   @include phones {
     width: 100%;
     height: 100%;
@@ -45,7 +41,6 @@
   justify-content: center;
   align-items: center;
   white-space: nowrap;
-
   &:after {
     content: "";
     display: block;
@@ -55,33 +50,29 @@
     height: 0;
     cursor: pointer;
     margin-left: 5px;
-    transform: translateY(3px) rotate(0deg);
+    transform: translateY(5px) rotate(0deg);
     border-color: $black transparent transparent transparent;  
     transition: transform .4s ease-out;
-    
     @include phones {
-      transform: translateY(3px) rotate(0deg);
+      transform: translateY(5px) rotate(0deg);
     }
   }
-
   &--active {
     &::after {
-      transform:translateY(-3px) rotate(180deg);
+      transform:translateY(-5px) rotate(180deg);
+      opacity: .5;
     }
   }
 }
 
 .team__img-box {
   margin-bottom: 24px;
-  
   @include phones {
     display: none;
     margin-bottom: 0px;
   }
-  
   &--phone {
     display: none;
-
     @include phones {
       display: flex;
       justify-content: center;
@@ -92,7 +83,6 @@
 }
 .team__img {
   width: 100%;
-
   @include phones {
     max-width: rem(138px);
     max-height: rem(220px);
@@ -104,7 +94,6 @@
   cursor: pointer;
   transition: height .4s;
   overflow: hidden;
-
   @include phones {
     margin-bottom: 12px;
   }

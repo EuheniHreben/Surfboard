@@ -14,11 +14,9 @@
   transition: background .1s, box-shadow .1s;
   outline: none;
   cursor: pointer; 
-  
   &:hover {
     box-shadow: 0 0 rem(20px) 0 $yellow;
   }
-  
   &:active {
     color: $yellow;
     background-color: $black;
@@ -29,11 +27,9 @@
 .btn_type_second {
   background-color: $gray;
   color: $black;
-
   &:hover {
     box-shadow: 0 0 rem(20px) 0 $gray;
   }
-  
   &:active {
     box-shadow: 0 0 rem(16px) 0 $black;
   }

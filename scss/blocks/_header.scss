@@ -3,7 +3,6 @@
   align-items: center;
   justify-content: space-between;
   position: relative;
-
   @include phones {
     background-color: #1968B1;
   }
@@ -11,7 +10,16 @@
 
 .header__nav {
   width: 70%;
-
+  &.active {
+    left: 0;
+    .menu__list {
+      flex-direction: column;
+      height: 50%;
+      text-align: center;
+      font-size: rem(36px);
+      color: #fff;
+    }
+  }
   @include phones {
     position: fixed;
     width: 100%;
@@ -24,17 +32,5 @@
     align-items: center;
     background: #0d0d0df5;
     transition: left .3s;
-  }
-
-  &.active {
-    left: 0;
-    
-    .menu__list {
-      flex-direction: column;
-      height: 50%;
-      text-align: center;
-      font-size: rem(36px);
-      color: #fff;
-    }
   }
 }

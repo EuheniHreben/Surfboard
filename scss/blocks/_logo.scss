@@ -1,5 +1,4 @@
 .logo__img-box {
-
   @include phones {
     padding: 0px rem(20px);
   }
@@ -10,7 +9,6 @@
   width: rem(55px);
   height: rem(40px);
   margin-right: rem(50px);
-  
   @include phones {
     margin-right: 0px;
   }
