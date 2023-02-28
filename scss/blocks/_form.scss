@@ -48,10 +48,11 @@
   display: flex;
   gap: rem(16px);
   margin-bottom: rem(18px);
-}
-
-.form__btn {
-  padding: 0px rem(20px);
+  &--btn {
+    @include phones {
+      justify-content: center;
+    }
+  }
 }
 
 .form__label {

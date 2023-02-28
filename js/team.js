@@ -32,6 +32,12 @@ teamList.addEventListener('click', e => {
   if (target.classList.contains('team__text')) {
     closeItem(activeItem);
   }
+  if (target.classList.contains('team__img')) {
+    closeItem(activeItem);
+  }
+  if (target.classList.contains('team__job')) {
+    closeItem(activeItem);
+  }
   if (target.classList.contains('team__pos')) {
     closeItem(activeItem);
   }
