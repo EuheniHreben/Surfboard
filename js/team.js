@@ -19,8 +19,6 @@ teamList.addEventListener('click', e => {
   e.preventDefault();
   const target = e.target;
   const activeItem = document.querySelector('.team__name--active');
-  const prevElement = target.previousElementSibling;
-  const parentElement = target.parentElement;
   if (target.classList.contains('team__name')) {
     if (target.classList.contains('team__name--active')) {
       closeItem(target);

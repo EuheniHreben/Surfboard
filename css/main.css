@@ -440,12 +440,19 @@ h3 {
 .hamburgerButton {
   cursor: pointer;
   display: none;
-  z-index: 1000; }
+  z-index: 1000;
+  width: 80px;
+  height: 80px; }
   @media (max-width: 480px) {
     .hamburgerButton {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex; } }
+
+.hamburgerButton__img {
+  width: 80px;
+  height: 80px;
+  fill: #000; }
 
 svg {
   -webkit-transition: -webkit-transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -562,11 +569,16 @@ path:nth-child(6) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+  .features__list p {
+    margin-left: 0.5555555556rem; }
   @media (max-width: 480px) {
     .features__list {
       display: none; } }
 
 .features__item {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -574,7 +586,10 @@ path:nth-child(6) {
   max-width: 8.3333333333rem; }
 
 .features__img {
-  margin-right: 0.5555555556rem; }
+  display: block;
+  fill: #fff;
+  width: 40px;
+  height: 40px; }
 
 .btn {
   display: -webkit-inline-box;
@@ -655,6 +670,24 @@ path:nth-child(6) {
     .title p {
       font-size: 1rem; } }
 
+.address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .address .address__img {
+    width: 13px;
+    height: 13px;
+    fill: #000; }
+  .address--header .address__img {
+    fill: #fff; }
+  @media (max-width: 480px) {
+    .address--header {
+      display: none; } }
+
 .address__phone {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -668,15 +701,6 @@ path:nth-child(6) {
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center; } }
-  .address__phone::before {
-    display: block;
-    content: "";
-    background: url(../images/icons/Group1.png);
-    width: 13px;
-    height: 15px; }
-  @media (max-width: 480px) {
-    .address__phone--header {
-      display: none; } }
 
 .why {
   padding: 5.5555555556rem 0px;
@@ -779,6 +803,11 @@ path:nth-child(6) {
     .why__img-box {
       margin-bottom: 0px; } }
 
+.why__img {
+  width: 68px;
+  height: 68px;
+  fill: #000; }
+
 .why__desc {
   text-align: center; }
   @media (max-width: 480px) {
@@ -830,11 +859,15 @@ path:nth-child(6) {
   height: 40px;
   top: 45%; }
   .slider-controls__arrow--left {
-    background: url(../images/icons/left.png);
     left: 10%; }
   .slider-controls__arrow--right {
-    background: url(../images/icons/right.png);
     right: 10%; }
+
+.slider-controls__img {
+  width: 24px;
+  height: 40px;
+  fill: transparent;
+  stroke: #000; }
 
 .slider__list {
   display: -webkit-box;
@@ -971,8 +1004,6 @@ path:nth-child(6) {
         -ms-flex-pack: distribute;
             justify-content: space-around;
         margin-bottom: 1.1111111111rem; } }
-  .form input {
-    margin-right: 0.5555555556rem; }
   @media (max-width: 480px) {
     .form {
       padding: 1.1111111111rem 0px; } }
@@ -1248,6 +1279,10 @@ path:nth-child(6) {
   -webkit-transition: width .3s ease-in-out;
   transition: width .3s ease-in-out;
   cursor: pointer; }
+  @media (max-width: 480px) {
+    .accordeon__content {
+      -webkit-transition: width .8s ease-in-out;
+      transition: width .8s ease-in-out; } }
 
 .accordeon__desc {
   padding: 2rem;
@@ -1527,7 +1562,7 @@ path:nth-child(6) {
 .fixed-menu {
   position: fixed;
   right: 2%;
-  top: 24%;
+  top: 32%;
   z-index: 1000; }
   @media (max-width: 480px) {
     .fixed-menu {
@@ -1536,9 +1571,9 @@ path:nth-child(6) {
 .fixed-menu__item {
   margin-bottom: 0.2777777778rem; }
   .fixed-menu__item--active .fixed-menu__link {
-    border: 0.0555555556rem solid #FEDB3F; }
+    border: 0.0555555556rem solid #fff; }
   .fixed-menu__item--active .fixed-menu__link::before {
-    background: #FEDB3F; }
+    background: #fff; }
 
 .fixed-menu__link {
   display: block;
@@ -1554,7 +1589,7 @@ path:nth-child(6) {
     width: 0.6666666667rem;
     height: 0.6666666667rem;
     opacity: 60%;
-    background: #292929;
+    background: #fff;
     border-radius: 50%;
     top: 50%;
     left: 50%;

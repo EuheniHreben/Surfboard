@@ -2,9 +2,17 @@
   cursor: pointer;
   display: none;
   z-index: 1000;
+  width: 80px;
+  height: 80px;
   @include phones {
     display: flex;
   }
+}
+
+.hamburgerButton__img {
+  width: 80px;
+  height: 80px;
+  fill: #000;
 }
 
 svg {

@@ -34,48 +34,54 @@
               <li class="menu__item"><a href="#map" class="menu__link">Контакты</a></li>
             </ul>
           </nav>
-          <address class="address">
-            <a href="tel:+88009039090" class="address__phone address__phone--header">8 800 903 90 90</a>
+          <address class="address address--header">
+            <a href="tel:+88009039090" class="address__phone">
+              <div class="address__img-box">
+                <svg class="address__img">
+                  <use xlink:href="svg/feature.svg#phone"/>
+                </svg>
+              </div>
+              8 800 903 90 90</a>
           </address>
           <div class="hamburgerButton">
             <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 200 200">
-                  <g stroke-width="6.5" stroke-linecap="round">
-                    <path
-                      d="M72 82.286h28.75"
-                      fill="#009100"
-                      fill-rule="evenodd"
-                      stroke="#fff"
-                    />
-                    <path
-                      d="M100.75 103.714l72.482-.143c.043 39.398-32.284 71.434-72.16 71.434-39.878 0-72.204-32.036-72.204-71.554"
-                      fill="none"
-                      stroke="#fff"
-                    />
-                    <path
-                      d="M72 125.143h28.75"
-                      fill="#009100"
-                      fill-rule="evenodd"
-                      stroke="#fff"
-                    />
-                    <path
-                      d="M100.75 103.714l-71.908-.143c.026-39.638 32.352-71.674 72.23-71.674 39.876 0 72.203 32.036 72.203 71.554"
-                      fill="none"
-                      stroke="#fff"
-                    />
-                    <path
-                      d="M100.75 82.286h28.75"
-                      fill="#009100"
-                      fill-rule="evenodd"
-                      stroke="#fff"
-                    />
-                    <path
-                      d="M100.75 125.143h28.75"
-                      fill="#009100"
-                      fill-rule="evenodd"
-                      stroke="#fff"
-                    />
-                  </g>
-                </svg>
+              <g stroke-width="6.5" stroke-linecap="round">
+                <path
+                  d="M72 82.286h28.75"
+                  fill="#009100"
+                  fill-rule="evenodd"
+                  stroke="#fff"
+                />
+                <path
+                  d="M100.75 103.714l72.482-.143c.043 39.398-32.284 71.434-72.16 71.434-39.878 0-72.204-32.036-72.204-71.554"
+                  fill="none"
+                  stroke="#fff"
+                />
+                <path
+                  d="M72 125.143h28.75"
+                  fill="#009100"
+                  fill-rule="evenodd"
+                  stroke="#fff"
+                />
+                <path
+                  d="M100.75 103.714l-71.908-.143c.026-39.638 32.352-71.674 72.23-71.674 39.876 0 72.203 32.036 72.203 71.554"
+                  fill="none"
+                  stroke="#fff"
+                />
+                <path
+                  d="M100.75 82.286h28.75"
+                  fill="#009100"
+                  fill-rule="evenodd"
+                  stroke="#fff"
+                />
+                <path
+                  d="M100.75 125.143h28.75"
+                  fill="#009100"
+                  fill-rule="evenodd"
+                  stroke="#fff"
+                />
+              </g>
+            </svg>
           </div>
         </header>
         <div class="title">
@@ -87,19 +93,25 @@
           <ul class="features__list">
             <li class="features__item">
               <div class="features__img-box">
-                <img src="./images/icons/main-2.png" alt="" class="features__img">
+                <svg class="features__img">
+                  <use xlink:href="svg/feature.svg#main2"/>
+                </svg>
               </div>
               <p>Уникальный дизайн</p>
             </li>
             <li class="features__item">
               <div class="features__img-box">
-                <img src="./images/icons/main-3.png" alt="" class="features__img">
+                <svg class="features__img">
+                  <use xlink:href="svg/feature.svg#main3"/>
+                </svg>
               </div>
               <p>Прочные материалы</p>
             </li>
             <li class="features__item">
               <div class="features__img-box">
-                <img src="./images/icons/main-1.png" alt="" class="features__img">
+                <svg class="features__img">
+                  <use xlink:href="svg/feature.svg#main1"/>
+                </svg>
               </div>
               <p>Быстрая доставка</p>
             </li>
@@ -115,7 +127,9 @@
         <ul class="why__list">
           <li class="why__item">
             <div class="why__img-box">
-              <img src="./images/icons/feat-2.png" alt="" class="why__img">
+              <svg class="why__img">
+                <use xlink:href="svg/feature.svg#why2"/>
+              </svg>
             </div>
             <div class="why__desc">
               <h3>Perfect Fit</h3>
@@ -125,7 +139,9 @@
           </li>
           <li class="why__item">
             <div class="why__img-box">
-              <img src="./images/icons/feat-1.png" alt="" class="why__img">
+              <svg class="why__img">
+                <use xlink:href="svg/feature.svg#why1"/>
+              </svg>
             </div>
             <div class="why__desc">
               <h3>Strong</h3>
@@ -135,7 +151,9 @@
           </li>
           <li class="why__item">
             <div class="why__img-box">
-              <img src="./images/icons/feat-3.png" alt="" class="why__img">
+              <svg class="why__img">
+                <use xlink:href="svg/feature.svg#why3"/>
+              </svg>
             </div>
             <div class="why__desc">
               <h3>Perfect Fit</h3>
@@ -150,8 +168,16 @@
     <section class="slider-section section" id="slider">
       <div class="container">
         <div class="slider-controls">
-          <a href="#" class="slider-controls__arrow slider-controls__arrow--left"></a>
-          <a href="#" class="slider-controls__arrow slider-controls__arrow--right"></a>
+          <a href="#" class="slider-controls__arrow slider-controls__arrow--left">
+            <svg class="slider-controls__img">
+              <use xlink:href="svg/feature.svg#left"/>
+            </svg>
+          </a>
+          <a href="#" class="slider-controls__arrow slider-controls__arrow--right">
+            <svg class="slider-controls__img">
+              <use xlink:href="svg/feature.svg#right"/>
+            </svg>
+          </a>
         </div>
         <ul class="slider">
           <li class="slider__item">
@@ -509,11 +535,14 @@
               </label>
             </div>
             <div class="form__group form__group--btn">
-              <div><input type="radio" name="order" value="cash">Оплата наличными</div>
-              <div><input type="radio" name="order" value="card">Оплата картой</div>
+              <input type="radio" name="order" value="cash" id="cash">
+              <label for="cash">Оплата наличными</label>
+              <input type="radio" name="order" value="card" id="card">
+              <label for="card">Оплата картой</label>
             </div>
             <div class="form__group form__group--btn">
-              <div><input type="checkbox" name="order" value="card">Не перезванивать</div>
+              <input type="checkbox" name="order" value="card" id="no-call">
+              <label for="no-call">Не перезванивать</label>
             </div>
             <div class="form__group form__group--btn">
               <button type="submit" class="btn">Заказать</button>
@@ -529,7 +558,13 @@
         <div class="container footer-container">
           <address class="address">
             <div class="address__city">Москва, ул.Новый Арбат, д.31/12</div>
-            <div class="address__phone">8 800 903 90 90</div>
+            <div class="address__phone">
+              <div class="address__img-box">
+                <svg class="address__img">
+                  <use xlink:href="svg/feature.svg#phone"/>
+                </svg>
+              </div>
+              8 800 903 90 90</div>
           </address>
           <div class="social">
             <ul class="social__list">
@@ -559,7 +594,7 @@
       </footer>
     </section>
 
-    <!-- <nav class="fixed-menu">
+    <nav class="fixed-menu">
       <ul class="fixed-menu__list">
         <li class="fixed-menu__item"><a href="#hero" class="fixed-menu__link">
             <div class="fixed-menu__text">
@@ -591,7 +626,7 @@
             <div class="fixed-menu__text">Контакты</div>
           </a></li>
       </ul>
-    </nav> -->
+    </nav>
 
     <script src="./js/jquery-3.6.3.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>

@@ -1,20 +1,26 @@
+.address {
+  display: flex;
+  flex-direction: column;
+  & .address__img {
+    width: 13px;
+    height: 13px;
+    fill: #000;
+  }
+  &--header {
+    & .address__img {
+      fill: #fff;
+    } 
+  @include phones {
+    display: none; 
+   }
+  }
+}
+
 .address__phone {
   display: flex;
   align-items: center;
   @include phones {
     text-align: center;
     justify-content: center;
-  }
-  &::before {
-    display: block;
-    content: "";
-    background: url(../images/icons/Group1.png);
-    width: 13px;
-    height: 15px;
-  }
-  &--header {
-  @include phones {
-    display: none; 
-   }
   }
 }

@@ -76,6 +76,9 @@
   overflow: hidden;
   transition: width .3s ease-in-out;
   cursor: pointer;
+  @include phones {
+    transition: width .8s ease-in-out;
+  }
 }
 
 .accordeon__desc {

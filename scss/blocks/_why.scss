@@ -80,6 +80,12 @@
   }
 }
 
+.why__img {
+  width: 68px;
+  height: 68px;
+  fill: #000;
+}
+
 .why__desc {
   text-align: center;
   @include phones {

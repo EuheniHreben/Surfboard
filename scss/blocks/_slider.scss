@@ -25,13 +25,18 @@
   height: 40px;
   top: 45%;
   &--left {
-    background: url(../images/icons/left.png);
     left: 10%;
   }
   &--right {
-    background: url(../images/icons/right.png);
     right: 10%;
   }
+}
+
+.slider-controls__img {
+  width: 24px;
+  height: 40px;
+  fill: transparent;
+  stroke: #000;
 }
 
 .slider__list {

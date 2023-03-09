@@ -1,16 +1,23 @@
 .features__list {
   display: flex;
+  & p {
+    margin-left: rem(10px);
+  }
   @include phones {
-   display: none; 
+    display: none; 
   }
 }
 
 .features__item {
+  align-items: center;
   display: flex;
   margin-right: rem(30px);
   max-width: rem(150px);
 }
 
 .features__img {
-  margin-right: rem(10px);
+  display: block;
+  fill: #fff;
+  width: 40px;
+  height: 40px;
 }
