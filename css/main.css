@@ -413,9 +413,14 @@ h3 {
 
 .logo__img {
   display: block;
-  width: 3.0555555556rem;
-  height: 2.2222222222rem;
-  margin-right: 2.7777777778rem; }
+  width: 56px;
+  height: 40px;
+  margin-right: 2.7777777778rem;
+  fill: #fff;
+  -webkit-transition: fill .3s;
+  transition: fill .3s; }
+  .logo__img:hover {
+    fill: #FEDB3F; }
   @media (max-width: 480px) {
     .logo__img {
       margin-right: 0px; } }
@@ -1053,6 +1058,8 @@ path:nth-child(6) {
   display: flex;
   gap: 0.8888888889rem;
   margin-bottom: 1rem; }
+  .form__group--btn label {
+    cursor: pointer; }
   @media (max-width: 480px) {
     .form__group--btn {
       -webkit-box-pack: center;
@@ -1473,6 +1480,15 @@ path:nth-child(6) {
   display: -ms-flexbox;
   display: flex;
   gap: 14px; }
+
+.social__img {
+  width: 20px;
+  height: 20px;
+  fill: #B3B3B3;
+  -webkit-transition: fill .3s;
+  transition: fill .3s; }
+  .social__img:hover {
+    fill: #000; }
 
 .footer {
   position: absolute;

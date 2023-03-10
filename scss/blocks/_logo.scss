@@ -6,9 +6,14 @@
 
 .logo__img {
   display: block;
-  width: rem(55px);
-  height: rem(40px);
+  width: 56px;
+  height: 40px;
   margin-right: rem(50px);
+  fill: #fff;
+  transition: fill .3s;
+  &:hover {
+    fill: $yellow;
+  }
   @include phones {
     margin-right: 0px;
   }

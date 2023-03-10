@@ -46,6 +46,9 @@
   gap: rem(16px);
   margin-bottom: rem(18px);
   &--btn {
+    & label {
+      cursor: pointer;
+    }
     @include phones {
       justify-content: center;
     }
