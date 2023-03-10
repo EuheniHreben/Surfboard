@@ -1,0 +1,54 @@
+.dropdown {
+  position: relative;
+  display: inline-flex;
+  &:hover {
+    .dropdown__list {
+      left: 100%;
+      opacity: 1;
+    }
+  }
+  @include phones {
+    display: none;
+  }
+}
+
+.dropdown__button {
+  width: rem(102px);
+  height: rem(102px);
+  background: url(../images/icons/click.png);
+  cursor: pointer;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.dropdown__list {
+  position: absolute;
+  right: 9999px;
+  opacity: 0;
+  background-color: #d6d6d6;
+  padding: rem(10px);
+  transition: opacity .3s;
+  border-radius: 5px;
+  width: rem(280px);
+}
+
+.dropdown__item {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: rem(10px);
+  width: 100%;
+  &:last-child {
+    margin-bottom: 0px;
+  }
+}
+
+.dropdown__img {
+  margin-right: 12px;
+}
+
+.dropdown__value {
+  margin-left: auto;
+}
