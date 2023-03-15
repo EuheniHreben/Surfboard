@@ -1,0 +1,10 @@
+.lang__item {
+  cursor: pointer;
+  font-weight: bold;
+  &--active {
+    color: $yellow
+  }
+  &:hover {
+    color: $yellow
+  }
+}

@@ -1472,6 +1472,14 @@ path:nth-child(6) {
 .video__img {
   width: 100%; }
 
+.lang__item {
+  cursor: pointer;
+  font-weight: bold; }
+  .lang__item--active {
+    color: #FEDB3F; }
+  .lang__item:hover {
+    color: #FEDB3F; }
+
 .map {
   position: relative; }
 
