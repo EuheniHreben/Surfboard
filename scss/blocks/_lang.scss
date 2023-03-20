@@ -1,3 +1,19 @@
+.lang {
+  &--mob {
+    display: none;
+  }
+  @include phones {
+    &--mob {
+      display: flex;
+      font-size: 30px;
+      gap: 20px;
+    }
+    &--desk {
+      display: none;
+    }
+  }
+}
+
 .lang__item {
   cursor: pointer;
   font-weight: bold;
