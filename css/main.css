@@ -1628,6 +1628,47 @@ path:nth-child(6) {
 .dropdown__value {
   margin-left: auto; }
 
+.window {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px); }
+
+.window__message {
+  width: 300px;
+  height: 180px;
+  padding: 38px;
+  border-radius: 10px;
+  background: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+
+.window__text {
+  color: #fff;
+  font-weight: bold; }
+
 .fixed-menu {
   position: fixed;
   right: 2%;
