@@ -3,8 +3,6 @@ const sendButton = document.getElementById('sendButton');
 
 sendButton.addEventListener('click', (event) => {
   event.preventDefault();
-  console.log('Hello!');
-
   const window = document.createElement('div');
   window.classList.add('window');
   formPage.appendChild(window);
@@ -19,9 +17,12 @@ sendButton.addEventListener('click', (event) => {
   btn.classList.add('btn');
   btn.innerHTML = 'Закрыть';
   message.appendChild(btn);
-
+  const body = document.body;
+  body.classList.toggle('locked');
+  
   btn.addEventListener('click', (event) => {
     event.preventDefault();
     formPage.removeChild(window);
+    body.classList.toggle('locked');
   })
 })

@@ -45,21 +45,18 @@
     content: "";
     display: block;
     z-index: 1000;
-    border: 7px solid transparent;
-    width: 0;
-    height: 0;
+    margin-left: 8px;
     cursor: pointer;
-    margin-left: 5px;
-    transform: translateY(5px) rotate(0deg);
-    border-color: $black transparent transparent transparent;  
-    transition: transform .4s ease-out;
-    @include phones {
-      transform: translateY(5px) rotate(0deg);
-    }
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-135deg);
+    transition: transform .4s ease;
   }
   &--active {
     &::after {
-      transform:translateY(-5px) rotate(180deg);
+      transform: rotate(45deg);
       opacity: .5;
     }
   }
