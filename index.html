@@ -21,7 +21,7 @@
         <div class="container hero-container">
           <header class="header">
             <div class="logo">
-              <a href="#form" class="logo__link">
+              <a href="#" data-scroll-to="video" class="logo__link">
                 <div class="logo__img-box">
                   <svg class="logo__img">
                     <use xlink:href="svg/feature.svg#logo"/>
@@ -35,7 +35,7 @@
                 <li class="menu__item"><a href="#" class="menu__link" data-scroll-to="slider">Серфборды</a></li>
                 <li class="menu__item"><a href="#" class="menu__link" data-scroll-to="team">Команда</a></li>
                 <li class="menu__item"><a href="#" class="menu__link" data-scroll-to="accordeon">Меню</a></li>
-                <li class="menu__item"><a href="#" class="menu__link" data-scroll-to="review">Отзывы</a></li>
+                <li class="menu__item"><a href="#" class="menu__link" data-scroll-to="reviews">Отзывы</a></li>
                 <li class="menu__item"><a href="#" class="menu__link" data-scroll-to="video">Как мы работаем</a></li>
                 <li class="menu__item"><a href="#" class="menu__link" data-scroll-to="map">Контакты</a></li>
               </ul>
@@ -60,35 +60,35 @@
             <div class="hamburgerButton">
               <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 200 200" class="hamburgerButton__img">
                 <g stroke-width="6.5" stroke-linecap="round">
-                  <path class="hamburgerButton__path"
+                  <path
                     d="M72 82.286h28.75"
                     fill="#009100"
                     fill-rule="evenodd"
                     stroke="#fff"
                   />
-                  <path class="hamburgerButton__path"
+                  <path
                     d="M100.75 103.714l72.482-.143c.043 39.398-32.284 71.434-72.16 71.434-39.878 0-72.204-32.036-72.204-71.554"
                     fill="none"
                     stroke="#fff"
                   />
-                  <path class="hamburgerButton__path"
+                  <path
                     d="M72 125.143h28.75"
                     fill="#009100"
                     fill-rule="evenodd"
                     stroke="#fff"
                   />
-                  <path class="hamburgerButton__path"
+                  <path
                     d="M100.75 103.714l-71.908-.143c.026-39.638 32.352-71.674 72.23-71.674 39.876 0 72.203 32.036 72.203 71.554"
                     fill="none"
                     stroke="#fff"
                   />
-                  <path class="hamburgerButton__path"
+                  <path
                     d="M100.75 82.286h28.75"
                     fill="#009100"
                     fill-rule="evenodd"
                     stroke="#fff"
                   />
-                  <path class="hamburgerButton__path"
+                  <path
                     d="M100.75 125.143h28.75"
                     fill="#009100"
                     fill-rule="evenodd"
@@ -101,7 +101,7 @@
           <div class="title">
             <h1>Профессиональные доски для серфинга</h1>
             <p>Самый большой выбор серфбордов в мире</p>
-            <a href="#form" class="btn" data-scroll-to="form">Заказать</a>
+            <a href="#" class="btn" data-scroll-to="form">Заказать</a>
           </div>
           <div class="features">
             <ul class="features__list">
@@ -176,7 +176,7 @@
         </div>
       </section>
 
-      <section class="slider section" data-section-id="slide" data-fixed-menu-theme="white">
+      <section class="slider section" data-section-id="slider" data-fixed-menu-theme="dark">
         <div class="container">
           <div class="slider-controls">
             <a href="#" class="slider-controls__arrow slider-controls__arrow--left">
@@ -269,7 +269,7 @@
                 </ul>
                 <div class="slider__price">
                   <span>700 $</span>
-                  <a href="#form" class="btn" data-scroll-to="form">Заказать</a>
+                  <a href="#" class="btn" data-scroll-to="form">Заказать</a>
                 </div>
               </div>
             </li>
@@ -351,7 +351,7 @@
                 </ul>
                 <div class="slider__price">
                   <span>1200 $</span>
-                  <a href="#form" class="btn" data-scroll-to="form">Заказать</a>
+                  <a href="#" class="btn" data-scroll-to="form">Заказать</a>
                 </div>
               </div>
             </li>
@@ -359,7 +359,7 @@
         </div>
       </section>
 
-      <section class="team section" data-section-id="team" data-fixed-menu-theme="white">
+      <section class="team section" data-section-id="team" data-fixed-menu-theme="dark">
         <div class="container">
           <h2>Команда</h2>
           <ul class="team__list">
@@ -465,7 +465,7 @@
         </div>
       </section>
 
-      <section class="reviews section" data-section-id="reviews" data-fixed-menu-theme="white">
+      <section class="reviews section" data-section-id="reviews" data-fixed-menu-theme="dark">
         <div class="container">
           <h2>Отзывы</h2>
           <ul class="reviews__list">
@@ -521,7 +521,7 @@
         </div>
       </section>
 
-      <section class="video section" data-section-id="video" data-fixed-menu-theme="white">
+      <section class="video section" data-section-id="video" data-fixed-menu-theme="dark">
         <div class="container video-container">
           <h2>Как мы работаем</h2>
           <div class="video__img-box"><img src="./images/player.png" alt="" class="video__img"></div>
@@ -586,7 +586,7 @@
                 <label for="no-call">Не перезванивать</label>
               </div>
               <div class="form__group form__group--btn">
-                <button type="submit" class="btn" id="sendButton">Заказать</button>
+                <button type="submit" class="btn" id="sendButtonRu">Заказать</button>
                 <button type="reset" class="btn btn_type_second">Очистить</button>
               </div>
             </div>
@@ -594,7 +594,8 @@
         </div>
       </section>
 
-      <section class="map section" data-section-id="map" data-fixed-menu-theme="white">
+      <section class="map section" data-section-id="map" data-fixed-menu-theme="dark">
+        <div id="map"></div>
         <footer class="footer">
           <div class="container footer-container">
             <address class="address">
@@ -653,7 +654,7 @@
       <li class="fixed-menu__item"><a href="#" class="fixed-menu__link" data-scroll-to="slider"><div class="fixed-menu__text">Серфборды</div></a></li>
       <li class="fixed-menu__item"><a href="#" class="fixed-menu__link" data-scroll-to="team"><div class="fixed-menu__text">Команда</div></a></li>
       <li class="fixed-menu__item"><a href="#" class="fixed-menu__link" data-scroll-to="accordeon"><div class="fixed-menu__text">Меню</div></a></li>
-      <li class="fixed-menu__item"><a href="#" class="fixed-menu__link" data-scroll-to="review"><div class="fixed-menu__text">Отзывы</div></a></li>
+      <li class="fixed-menu__item"><a href="#" class="fixed-menu__link" data-scroll-to="reviews"><div class="fixed-menu__text">Отзывы</div></a></li>
       <li class="fixed-menu__item"><a href="#" class="fixed-menu__link" data-scroll-to="video"><div class="fixed-menu__text">Как мы работаем</div></a></li>
       <li class="fixed-menu__item"><a href="#" class="fixed-menu__link" data-scroll-to="form"><div class="fixed-menu__text">Доставка</div></a></li>
       <li class="fixed-menu__item"><a href="#" class="fixed-menu__link" data-scroll-to="map"><div class="fixed-menu__text">Контакты</div></a></li>
@@ -661,7 +662,6 @@
   </nav>
 
   <script src="./js/jquery-3.6.3.js"></script>
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
   <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js" integrity="sha512-YYiD5ZhmJ0GCdJvx6Xe6HzHqHvMpJEPomXwPbsgcpMFPW+mQEeVBU6l9n+2Y+naq+CLbujk91vHyN18q6/RSYw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.5/mobile-detect.min.js" integrity="sha512-1vJtouuOb2tPm+Jh7EnT2VeiCoWv0d7UQ8SGl/2CoOU+bkxhxSX4gDjmdjmbX4OjbsbCBN+Gytj4RGrjV3BLkQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -672,6 +672,7 @@
   <script src="./js/accordeon.js"></script>
   <script src="./js/team.js"></script>
   <script src="./js/order.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
   <script src="./js/map.js"></script>
   
 </body>

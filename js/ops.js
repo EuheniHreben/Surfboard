@@ -111,7 +111,3 @@ if (isMobile) {
     },
   });
 };
-
-screen.addEventListener("orientationchange", function () {
-  screen.lockOrientation('landscape');
-});

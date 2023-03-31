@@ -1,8 +1,21 @@
 .fixed-menu {
   position: fixed;
-  right: 2%;
+  right: 4%;
   top: 32%;
   z-index: 1000;
+  &--dark {
+    .fixed-menu__link::before {
+      border: rem(2px) solid #000;
+    }
+    .fixed-menu__item--active {
+      .fixed-menu__link {
+        border: rem(2px) solid #000;
+      }
+    }
+    .fixed-menu__text {
+      color: #000;
+    }
+  }
   @include phones {
     display: none;
   }
@@ -12,29 +25,26 @@
   margin-bottom: rem(5px);
   &--active {
     .fixed-menu__link {
-      border: rem(1px) solid #fff;
-    }
-    .fixed-menu__link::before {
-      background: #fff;
+      border: rem(2px) solid #fff;
     }
   }
 }
 
 .fixed-menu__link {
   display: block;
-  width: rem(12px);
-  height: rem(12px);
+  width: rem(22px);
+  height: rem(22px);
   border-radius: 50%;
   border: 1px solid transparent;
   position: relative;
-  margin: 14px;
+  margin: 8px;
   &::before {
     content: "";
     display: block;
-    width: rem(12px);
-    height: rem(12px);
+    width: rem(6px);
+    height: rem(6px);
     opacity: 60%;
-    background: #fff;
+    border: rem(2px) solid #fff;
     border-radius: 50%;
     top: 50%;
     left: 50%;
@@ -51,13 +61,14 @@
 
 .fixed-menu__text {
   position: absolute;
+  color: #fff;
   font-size: 1rem;
-  top: -5px;
+  top: -3px;
   right: 9999px;
   width: 150px;
   text-align: right;
   opacity: 0;
   z-index: 100;
-  font-weight: 400;
+  font-weight: 500;
   transition: opacity .3s ease-in;
 }
