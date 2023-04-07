@@ -671,7 +671,7 @@ path {
   margin-bottom: 0.3333333333rem; }
   @media (max-width: 480px) {
     .title h1 {
-      font-size: 1.8888888889rem; } }
+      font-size: 1.6666666667rem; } }
 
 .title p {
   margin-bottom: 1.6666666667rem;
@@ -1253,7 +1253,7 @@ path {
 
 .accordeon__link {
   position: relative;
-  width: 6.6666666667rem;
+  width: 7.2222222222rem;
   -webkit-transition: -webkit-box-shadow .5s;
   transition: -webkit-box-shadow .5s;
   transition: box-shadow .5s;
@@ -1678,7 +1678,7 @@ path {
     color: #000; }
   @media (max-width: 480px) {
     .fixed-menu {
-      right: -2%;
+      right: 0%;
       top: 32%; } }
 
 .fixed-menu__item {

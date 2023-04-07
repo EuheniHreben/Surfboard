@@ -9,7 +9,6 @@
         .fixed-menu__link::before {
           background-color: #fff;
           border: rem(2px) solid #000;
-    
         }
       }
     }
@@ -22,7 +21,7 @@
     }
   }
   @include phones {
-    right: -2%;
+    right: 0%;
     top: 32%;
   }
 }
@@ -33,7 +32,6 @@
     .fixed-menu__link::before {
       background-color: #fff;
       border: rem(2px) solid #000;
-
     }
   }
 }
