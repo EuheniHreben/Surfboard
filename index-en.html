@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -521,7 +521,34 @@
       <section class="video section" data-section-id="video" data-fixed-menu-theme="dark">
         <div class="container video-container">
           <h2>How we are working</h2>
-          <div class="video__img-box"><img src="./images/player.png" alt="" class="video__img"></div>
+          <div class="video__wrapper">
+            <div class="video__player">
+              <video src="./video/videoplayback.mp4" class="video__player-video" id="player">
+                <source src="./video/videoplayback.mp4" type="video/mp4">
+              </video>
+              <button class="play video__player-img">
+                <img src="./svg/play.svg" alt="" class="play video__btn-img">
+              </button>
+            </div>
+            <div class="video__toolbar">
+              <div class="duration">
+                <div class="duration__btn-wrap">
+                  <div class="play duration__img"></div>
+                </div>
+                <div class="duration__lenght-wrap">
+                  <input type="range" class="duration__lenght" id="durationLevel">
+                </div>
+              </div>
+              <div class="sound" id="soundBtn">
+                <button class="sound__btn">
+                  <img src="./svg/volume.svg" alt="" class="sound__mic" id="dynamic">
+                </button>
+                <div class="sound__volume">
+                  <input type="range" class="duration__lenght duration__lenght--other" id="micLevel">
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -608,28 +635,28 @@
             <div class="social">
               <ul class="social__list">
                 <li class="social__item">
-                  <a href="" class="social__link">
+                  <a href="https://vk.com/" class="social__link">
                     <svg class="social__img">
                       <use xlink:href="svg/feature.svg#vk"/>
                     </svg>
                   </a>
                 </li>
                 <li class="social__item">
-                  <a href="" class="social__link">
+                  <a href="https://www.facebook.com/" class="social__link">
                     <svg class="social__img">
                       <use xlink:href="svg/feature.svg#f"/>
                     </svg>
                   </a>
                 </li>
                 <li class="social__item">
-                  <a href="" class="social__link">
+                  <a href="https://www.instagram.com/" class="social__link">
                     <svg class="social__img">
                       <use xlink:href="svg/feature.svg#in"/>
                     </svg>
                   </a>
                 </li>
                 <li class="social__item">
-                  <a href="" class="social__link">
+                  <a href="https://twitter.com/" class="social__link">
                     <svg class="social__img">
                       <use xlink:href="svg/feature.svg#tv"/>
                     </svg>
@@ -669,6 +696,7 @@
   <script src="./js/accordeon.js"></script>
   <script src="./js/team.js"></script>
   <script src="./js/order.js"></script>
+  <script src="./js/video.js"></script>
   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
   <script src="./js/map.js"></script>
 
