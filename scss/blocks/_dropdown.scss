@@ -13,16 +13,16 @@
 }
 
 .dropdown__button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
   width: rem(102px);
   height: rem(102px);
   background: #3A587E;
-  cursor: pointer;
-  border: none;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
   border-radius: 5px;
-  position: relative;
+  border: none;
+  cursor: pointer;
   transition: background .3s;
   &:hover {
     background: #3465A3;
@@ -49,9 +49,9 @@
   opacity: 0;
   background-color: #d6d6d6;
   padding: rem(10px);
-  transition: opacity .3s;
   border-radius: 5px;
   width: rem(280px);
+  transition: opacity .3s;
 }
 
 .dropdown__item {

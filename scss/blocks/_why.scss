@@ -41,29 +41,12 @@
   max-width: rem(267px);
   position: relative;
   line-height: 1.1;
-  &::before {
-    display: block;
-    position: absolute;
-    content: "";
-    width: 67px;
-    height: 21px;
-    background: url(../images/icons/circles.png);
-    top: 18%;
-    right: -25%;
-    @include phones {
-      display: none;
-    }
-  }
-  &:last-child::before {
-    display: none;
-  }
   @include phones {
     flex-direction: row;
     max-width: 100%;
     height: 100%;
   }
 }
-
 
 .why__img-box {
   display: flex;
