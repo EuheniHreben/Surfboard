@@ -618,10 +618,14 @@ path {
   font-weight: 800;
   border-radius: 2.4444444444rem;
   text-transform: uppercase;
-  -webkit-transition: background .1s, -webkit-box-shadow .1s;
-  transition: background .1s, -webkit-box-shadow .1s;
-  transition: background .1s, box-shadow .1s;
-  transition: background .1s, box-shadow .1s, -webkit-box-shadow .1s;
+  -webkit-transition: background .2s linear;
+  transition: background .2s linear;
+  -webkit-transition: -webkit-box-shadow .2s linear;
+  transition: -webkit-box-shadow .2s linear;
+  transition: box-shadow .2s linear;
+  transition: box-shadow .2s linear, -webkit-box-shadow .2s linear;
+  -webkit-transition: color .2s linear;
+  transition: color .2s linear;
   outline: none;
   cursor: pointer; }
   .btn:hover {
@@ -634,14 +638,10 @@ path {
             box-shadow: 0 0 0.8888888889rem 0 #292929; }
 
 .btn_type_second {
-  background-color: #666666;
-  color: #292929; }
+  background-color: #666666; }
   .btn_type_second:hover {
     -webkit-box-shadow: 0 0 1.1111111111rem 0 #666666;
             box-shadow: 0 0 1.1111111111rem 0 #666666; }
-  .btn_type_second:active {
-    -webkit-box-shadow: 0 0 0.8888888889rem 0 #292929;
-            box-shadow: 0 0 0.8888888889rem 0 #292929; }
 
 .title {
   max-width: 50%;
@@ -1129,7 +1129,9 @@ path {
   left: 0;
   right: 0;
   bottom: 0;
-  opacity: 0; }
+  opacity: 0;
+  -webkit-transition: opacity .1s linear;
+  transition: opacity .1s linear; }
   .reviews__item--active {
     opacity: 1;
     position: static;
@@ -1666,7 +1668,9 @@ path {
 
 .lang__item {
   cursor: pointer;
-  font-weight: bold; }
+  font-weight: bold;
+  -webkit-transition: color .2s linear;
+  transition: color .2s linear; }
   .lang__item--active {
     color: #000; }
   .lang__item:hover {
@@ -1750,8 +1754,8 @@ path {
   border-radius: 5px;
   border: none;
   cursor: pointer;
-  -webkit-transition: background .3s;
-  transition: background .3s; }
+  -webkit-transition: background .4s linear;
+  transition: background .4s linear; }
   .dropdown__button:hover {
     background: #3465A3; }
 
@@ -1862,8 +1866,10 @@ path {
 .fixed-menu__item {
   margin-bottom: 0.2777777778rem; }
   .fixed-menu__item--active .fixed-menu__link::before {
-    background-color: #fff;
-    border: 0.1111111111rem solid #000; }
+    background: #fff;
+    border: 0.1111111111rem solid #000;
+    -webkit-transition: background .2s linear;
+    transition: background .2s linear; }
 
 .fixed-menu__link {
   display: block;
@@ -1880,19 +1886,22 @@ path {
     height: 0.3333333333rem;
     opacity: 60%;
     border: 0.1111111111rem solid #fff;
-    background-color: #000;
+    background: #000;
     border-radius: 50%;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
-    position: absolute; }
+    position: absolute;
+    -webkit-transition: background .2s linear;
+    transition: background .2s linear; }
   .fixed-menu__link:hover .fixed-menu__text {
     left: -160px;
     opacity: 1; }
 
 .fixed-menu__text {
   position: absolute;
+  text-decoration: underline;
   color: #fff;
   font-weight: 600;
   font-size: 1rem;
@@ -1902,7 +1911,7 @@ path {
   text-align: right;
   opacity: 0;
   z-index: 100;
-  -webkit-transition: opacity .3s ease-in;
-  transition: opacity .3s ease-in; }
+  -webkit-transition: opacity .4s linear;
+  transition: opacity .4s linear; }
 
 /*# sourceMappingURL=main.css.map */

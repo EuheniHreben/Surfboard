@@ -30,6 +30,7 @@
   right: 0;
   bottom: 0;
   opacity: 0;
+  transition: opacity .1s linear;
   &--active {
     opacity: 1;
     position: static;

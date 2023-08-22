@@ -29,8 +29,9 @@
   margin-bottom: rem(5px);
   &--active {
     .fixed-menu__link::before {
-      background-color: #fff;
+      background: #fff;
       border: rem(2px) solid #000;
+      transition: background .2s linear;
     }
   }
 }
@@ -50,12 +51,13 @@
     height: rem(6px);
     opacity: 60%;
     border: rem(2px) solid #fff;
-    background-color: #000;
+    background: #000;
     border-radius: 50%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     position: absolute;
+    transition: background .2s linear;
   }
   &:hover {
     .fixed-menu__text {
@@ -67,6 +69,7 @@
 
 .fixed-menu__text {
   position: absolute;
+  text-decoration: underline;
   color: #fff;
   font-weight: 600;
   font-size: 1rem;
@@ -76,5 +79,5 @@
   text-align: right;
   opacity: 0;
   z-index: 100;
-  transition: opacity .3s ease-in;
+  transition: opacity .4s linear;
 }

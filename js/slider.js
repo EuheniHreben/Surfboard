@@ -2,8 +2,9 @@ const slider = $('.slider__list').bxSlider({
   pager: false,
   controls:false, 
   auto: true,
-  speed: 1100,
-  pause: 4000
+  speed: 2000,
+  easing: 'ease-in-out',
+  pause: 5000
 });
 
 $('.slider-controls__arrow--left').click(e => {

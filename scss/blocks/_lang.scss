@@ -17,6 +17,7 @@
 .lang__item {
   cursor: pointer;
   font-weight: bold;
+  transition: color .2s linear;
   &--active {
     color: #000;
   }
