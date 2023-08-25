@@ -10,7 +10,7 @@
   height: 40px;
   margin-right: rem(50px);
   fill: #fff;
-  transition: fill .3s;
+  transition: fill .2s linear;
   &:hover {
     fill: $yellow;
   }

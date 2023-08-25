@@ -10,15 +10,20 @@
     & .address__img {
       fill: #fff;
     } 
-  @include phones {
-    display: none; 
-   }
+    @include phones {
+      display: none; 
+    }
   }
 }
 
 .address__phone {
   display: flex;
   align-items: center;
+  transition: color .2s linear;
+  &:hover {
+    color: #000;
+    text-decoration: underline;
+  }
   @include phones {
     text-align: center;
     justify-content: center;

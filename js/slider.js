@@ -4,7 +4,7 @@ const slider = $('.slider__list').bxSlider({
   auto: true,
   speed: 2000,
   easing: 'ease-in-out',
-  pause: 5000
+  pause: 4000
 });
 
 $('.slider-controls__arrow--left').click(e => {

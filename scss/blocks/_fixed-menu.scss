@@ -1,7 +1,7 @@
 .fixed-menu {
   position: fixed;
-  right: 4%;
-  top: 32%;
+  right: 5%;
+  top: 34%;
   z-index: 1000;
   &--dark {
     .fixed-menu__item {
@@ -31,7 +31,7 @@
     .fixed-menu__link::before {
       background: #fff;
       border: rem(2px) solid #000;
-      transition: background .2s linear;
+      transition: background .4s linear;
     }
   }
 }

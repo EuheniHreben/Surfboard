@@ -20,9 +20,7 @@
     box-shadow: 0 0 rem(20px) 0 $yellow;
   }
   &:active {
-    color: $yellow;
-    background-color: $black;
-    box-shadow: 0 0 rem(16px) 0 $black;
+    box-shadow: 0 0 rem(20px) 0 transparent;
   }
 }
 
@@ -32,6 +30,6 @@
     box-shadow: 0 0 rem(20px) 0 $gray;
   }
   &:active {
-    // box-shadow: 0 0 rem(16px) 0 $black;
+    box-shadow: 0 0 rem(20px) 0 transparent;
   }
 }
