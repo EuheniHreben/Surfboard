@@ -41,7 +41,7 @@
 .accordeon__link {
   position: relative;
   width: rem(130px);
-  transition: box-shadow .5s;
+  transition: box-shadow .4s linear;
   &:hover {
     box-shadow: 0 0 60px 15px #8ca3ad;
   }
@@ -74,11 +74,8 @@
   background-color: rgba(51, 53, 55, 0.8);
   backdrop-filter: blur(10px);
   overflow: hidden;
-  transition: width .3s ease-in-out;
+  transition: width .4s linear;
   cursor: pointer;
-  @include phones {
-    transition: width .8s ease-in-out;
-  }
 }
 
 .accordeon__desc {

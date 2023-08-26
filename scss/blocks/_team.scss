@@ -52,12 +52,13 @@
     display: inline-block;
     padding: 3px;
     transform: rotate(-135deg);
-    transition: transform .4s ease;
+    transition: transform .2s linear;
   }
   &--active {
     &::after {
       transform: rotate(45deg);
-      opacity: .5;
+      border: solid red;
+      border-width: 0 3px 3px 0;
     }
   }
 }
@@ -90,7 +91,7 @@
 .team__desc {
   height: 0;
   cursor: pointer;
-  transition: height .4s;
+  transition: height .2s linear;
   overflow: hidden;
   @include phones {
     margin-bottom: 12px;

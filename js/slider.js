@@ -1,8 +1,8 @@
 const slider = $('.slider__list').bxSlider({
-  pager: false,
-  controls:false, 
+  pager: true,
+  controls: false, 
   auto: true,
-  speed: 2000,
+  speed: 2100,
   easing: 'ease-in-out',
   pause: 4000
 });

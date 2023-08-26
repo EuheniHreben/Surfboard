@@ -1269,10 +1269,10 @@ path {
 .accordeon__link {
   position: relative;
   width: 7.2222222222rem;
-  -webkit-transition: -webkit-box-shadow .5s;
-  transition: -webkit-box-shadow .5s;
-  transition: box-shadow .5s;
-  transition: box-shadow .5s, -webkit-box-shadow .5s; }
+  -webkit-transition: -webkit-box-shadow .4s linear;
+  transition: -webkit-box-shadow .4s linear;
+  transition: box-shadow .4s linear;
+  transition: box-shadow .4s linear, -webkit-box-shadow .4s linear; }
   .accordeon__link:hover {
     -webkit-box-shadow: 0 0 60px 15px #8ca3ad;
             box-shadow: 0 0 60px 15px #8ca3ad; }
@@ -1303,13 +1303,9 @@ path {
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
   overflow: hidden;
-  -webkit-transition: width .3s ease-in-out;
-  transition: width .3s ease-in-out;
+  -webkit-transition: width .4s linear;
+  transition: width .4s linear;
   cursor: pointer; }
-  @media (max-width: 480px) {
-    .accordeon__content {
-      -webkit-transition: width .8s ease-in-out;
-      transition: width .8s ease-in-out; } }
 
 .accordeon__desc {
   padding: 2rem;
@@ -1387,14 +1383,15 @@ path {
     padding: 3px;
     -webkit-transform: rotate(-135deg);
             transform: rotate(-135deg);
-    -webkit-transition: -webkit-transform .4s ease;
-    transition: -webkit-transform .4s ease;
-    transition: transform .4s ease;
-    transition: transform .4s ease, -webkit-transform .4s ease; }
+    -webkit-transition: -webkit-transform .2s linear;
+    transition: -webkit-transform .2s linear;
+    transition: transform .2s linear;
+    transition: transform .2s linear, -webkit-transform .2s linear; }
   .team__name--active::after {
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg);
-    opacity: .5; }
+    border: solid red;
+    border-width: 0 3px 3px 0; }
 
 .team__img-box {
   margin-bottom: 24px; }
@@ -1425,8 +1422,8 @@ path {
 .team__desc {
   height: 0;
   cursor: pointer;
-  -webkit-transition: height .4s;
-  transition: height .4s;
+  -webkit-transition: height .2s linear;
+  transition: height .2s linear;
   overflow: hidden; }
   @media (max-width: 480px) {
     .team__desc {
@@ -1716,8 +1713,8 @@ path {
   width: 20px;
   height: 20px;
   fill: #B3B3B3;
-  -webkit-transition: fill .3s;
-  transition: fill .3s; }
+  -webkit-transition: fill .2s linear;
+  transition: fill .2s linear; }
   .social__img:hover {
     fill: #000; }
 
@@ -1876,11 +1873,11 @@ path {
   top: 34%;
   z-index: 1000; }
   .fixed-menu--dark .fixed-menu__item--active .fixed-menu__link::before {
-    background-color: #fff;
-    border: 0.1111111111rem solid #000; }
+    background: #fff;
+    border: 2px solid #000; }
   .fixed-menu--dark .fixed-menu__link::before {
-    border: 0.1111111111rem solid #000;
-    background-color: #000; }
+    border: 2px solid #000;
+    background: #000; }
   .fixed-menu--dark .fixed-menu__text {
     color: #000; }
   @media (max-width: 480px) {
@@ -1888,10 +1885,18 @@ path {
       display: none; } }
 
 .fixed-menu__item {
-  margin-bottom: 0.2777777778rem; }
+  margin-bottom: 0.2777777778rem;
+  position: relative; }
+  .fixed-menu__item::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 20px;
+    right: 0; }
   .fixed-menu__item--active .fixed-menu__link::before {
     background: #fff;
-    border: 0.1111111111rem solid #000;
+    border: 2px solid #000;
     -webkit-transition: background .4s linear;
     transition: background .4s linear; }
 
@@ -1909,7 +1914,7 @@ path {
     width: 0.3333333333rem;
     height: 0.3333333333rem;
     opacity: 60%;
-    border: 0.1111111111rem solid #fff;
+    border: 2px solid #fff;
     background: #000;
     border-radius: 50%;
     top: 50%;
@@ -1917,8 +1922,10 @@ path {
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
     position: absolute;
-    -webkit-transition: background .2s linear;
-    transition: background .2s linear; }
+    -webkit-transition: background .4s linear;
+    transition: background .4s linear;
+    -webkit-transition: border .2s linear;
+    transition: border .2s linear; }
   .fixed-menu__link:hover .fixed-menu__text {
     left: -160px;
     opacity: 1; }
