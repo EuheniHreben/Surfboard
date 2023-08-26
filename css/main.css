@@ -589,8 +589,8 @@ path {
         -ms-flex-align: center;
             align-items: center;
     background: #0d0d0df5;
-    -webkit-transition: left .3s;
-    transition: left .3s; } }
+    -webkit-transition: left .4s ease-in-out;
+    transition: left .4s ease-in-out; } }
 
 .features__list {
   display: -webkit-box;
