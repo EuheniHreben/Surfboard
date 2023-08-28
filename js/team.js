@@ -19,6 +19,15 @@ teamList.addEventListener('click', e => {
   e.preventDefault();
   const target = e.target;
   const activeItem = document.querySelector('.team__name--active');
+  
+  if (target.classList.contains('team__img')) {
+    if (target.nextElementSibling.classList.contains('team__name--active')) {
+      closeItem(target.nextElementSibling);
+    } else {
+      closeItem(activeItem);
+      openItem(target.nextElementSibling);
+    }
+  }
   if (target.classList.contains('team__name')) {
     if (target.classList.contains('team__name--active')) {
       closeItem(target);
@@ -30,7 +39,7 @@ teamList.addEventListener('click', e => {
   if (target.classList.contains('team__text')) {
     closeItem(activeItem);
   }
-  if (target.classList.contains('team__img')) {
+  if (target.classList.contains('team__img-mini')) {
     closeItem(activeItem);
   }
   if (target.classList.contains('team__job')) {

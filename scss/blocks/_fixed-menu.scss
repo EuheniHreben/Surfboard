@@ -68,12 +68,16 @@
     position: absolute;
     transition: background .4s linear;
     transition: border .2s linear;
+    transition: transform .2s linear;
   }
   &:hover {
     .fixed-menu__text {
       left: -160px;
       opacity: 1;
     }
+  }
+  &:active {
+    transform: translateY(2px);
   }
 }
 

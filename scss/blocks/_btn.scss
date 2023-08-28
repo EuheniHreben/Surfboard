@@ -12,24 +12,14 @@
   border-radius: rem(44px);
   text-transform: uppercase;
   transition: background .2s linear;
-  transition: box-shadow .2s linear;
-  transition: color .2s linear;
   outline: none;
   cursor: pointer; 
-  &:hover {
-    box-shadow: 0 0 rem(20px) 0 $yellow;
-  }
+  transition: transform .1s linear;
   &:active {
-    box-shadow: 0 0 rem(20px) 0 transparent;
+    transform: translateY(4px);
   }
 }
 
 .btn_type_second {
-  background-color: $gray;
-  &:hover {
-    box-shadow: 0 0 rem(20px) 0 $gray;
-  }
-  &:active {
-    box-shadow: 0 0 rem(20px) 0 transparent;
-  }
+  background: $gray;
 }
