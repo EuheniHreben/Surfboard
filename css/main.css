@@ -876,7 +876,14 @@ path {
   width: 24px;
   height: 40px;
   fill: transparent;
-  stroke: #000; }
+  stroke: #000;
+  -webkit-transition: -webkit-transform .2s linear;
+  transition: -webkit-transform .2s linear;
+  transition: transform .2s linear;
+  transition: transform .2s linear, -webkit-transform .2s linear; }
+  .slider-controls__img:active {
+    -webkit-transform: translateY(4px);
+            transform: translateY(4px); }
 
 .slider__list {
   display: -webkit-box;

@@ -37,6 +37,10 @@
   height: 40px;
   fill: transparent;
   stroke: #000;
+  transition: transform .2s linear;
+  &:active {
+    transform: translateY(4px);
+  }
 }
 
 .slider__list {
