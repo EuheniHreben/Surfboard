@@ -17,38 +17,6 @@
   }
 }
 
-.slider-controls__arrow {
-  position: absolute;
-  z-index: 1000;
-  display: block;
-  width: 24px;
-  height: 40px;
-  top: 45%;
-  &--left {
-    left: 10%;
-  }
-  &--right {
-    right: 10%;
-  }
-}
-
-.slider-controls__img {
-  width: 24px;
-  height: 40px;
-  fill: transparent;
-  stroke: #000;
-  transition: transform .2s linear;
-  &:active {
-    transform: translateY(4px);
-  }
-}
-
-.slider__list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .slider__item {
   display: flex;
   align-items: center;

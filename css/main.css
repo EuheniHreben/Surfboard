@@ -860,42 +860,6 @@ path {
     .slider {
       padding: 1.6666666667rem 0px; } }
 
-.slider-controls__arrow {
-  position: absolute;
-  z-index: 1000;
-  display: block;
-  width: 24px;
-  height: 40px;
-  top: 45%; }
-  .slider-controls__arrow--left {
-    left: 10%; }
-  .slider-controls__arrow--right {
-    right: 10%; }
-
-.slider-controls__img {
-  width: 24px;
-  height: 40px;
-  fill: transparent;
-  stroke: #000;
-  -webkit-transition: -webkit-transform .2s linear;
-  transition: -webkit-transform .2s linear;
-  transition: transform .2s linear;
-  transition: transform .2s linear, -webkit-transform .2s linear; }
-  .slider-controls__img:active {
-    -webkit-transform: translateY(4px);
-            transform: translateY(4px); }
-
-.slider__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
-
 .slider__item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1938,7 +1902,6 @@ path {
 
 .fixed-menu__text {
   position: absolute;
-  text-decoration: underline;
   color: #fff;
   font-weight: 600;
   font-size: 1rem;
