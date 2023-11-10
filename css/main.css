@@ -965,6 +965,13 @@ path {
       font-size: 2.2222222222rem;
       padding: 0px 1.1111111111rem 0px; } }
 
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: transparent;
+  right: 10px;
+  padding: 30px;
+  color: #666666; }
+
 .form {
   background: url(../images/background/reviews-bg.png) center center/cover no-repeat;
   padding: 4.4444444444rem 0px;
@@ -1350,7 +1357,6 @@ path {
   .team__name--active::after {
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg);
-    border: solid red;
     border-width: 0 3px 3px 0; }
 
 .team__img-box--phone {
@@ -1842,7 +1848,8 @@ path {
     border: 2px solid #000;
     background: #000; }
   .fixed-menu--dark .fixed-menu__text {
-    color: #000; }
+    color: #000;
+    text-shadow: none; }
   @media (max-width: 480px) {
     .fixed-menu {
       display: none; } }
@@ -1903,6 +1910,7 @@ path {
 .fixed-menu__text {
   position: absolute;
   color: #fff;
+  text-shadow: 1px 1px black;
   font-weight: 600;
   font-size: 1rem;
   top: -3px;

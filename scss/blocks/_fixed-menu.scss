@@ -18,6 +18,7 @@
     }
     .fixed-menu__text {
       color: #000;
+      text-shadow: none;
     }
   }
   @include phones {
@@ -84,6 +85,7 @@
 .fixed-menu__text {
   position: absolute;
   color: #fff;
+  text-shadow: 1px 1px black;
   font-weight: 600;
   font-size: 1rem;
   top: -3px;
