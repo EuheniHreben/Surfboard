@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="./css/main.css">
@@ -176,358 +176,185 @@
 
       <section class="slider section" data-section-id="slider" data-fixed-menu-theme="dark">
         <div class="container">
-          <div class="slider-controls">
-            <a href="#" class="slider-controls__arrow slider-controls__arrow--left">
-              <svg class="slider-controls__img">
-                <use xlink:href="svg/feature.svg#left"/>
-              </svg>
-            </a>
-            <a href="#" class="slider-controls__arrow slider-controls__arrow--right">
-              <svg class="slider-controls__img">
-                <use xlink:href="svg/feature.svg#right"/>
-              </svg>
-            </a>
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="slider__item">
+                  <div class="slider__img-box">
+                    <img src="./images/board1.png" alt="" class="slider__img">
+                  </div>
+                  <div class="slider__info">
+                    <div class="slider__dropdown dropdown">
+                      <button class="dropdown__button">
+                        <svg class="dropdown__img-arrow">
+                          <use xlink:href="svg/feature.svg#param"/>
+                        </svg>
+                        <div class="dropdown__param">options</div>
+                      </button>
+                      <ul class="dropdown__list">
+                        <li class="dropdown__item">
+                          <div class="dropdown__img-box">
+                            <svg class="dropdown__img">
+                              <use xlink:href="svg/feature.svg#length"/>
+                            </svg>
+                          </div>
+                          <div class="dropdown__text">Board length</div>
+                          <div class="dropdown__value">from 2.5 m</div>
+                        </li>
+                        <li class="dropdown__item">
+                          <div class="dropdown__img-box">
+                            <svg class="dropdown__img">
+                              <use xlink:href="svg/feature.svg#width"/>
+                            </svg>
+                          </div>
+                          <div class="dropdown__text">Board width</div>
+                          <div class="dropdown__value">from 40 cm</div>
+                        </li>
+                        <li class="dropdown__item">
+                          <div class="dropdown__img-box">
+                            <svg class="dropdown__img">
+                              <use xlink:href="svg/feature.svg#thickness"/>
+                            </svg>
+                          </div>
+                          <div class="dropdown__text">Thickness</div>
+                          <div class="dropdown__value">8 cm</div>
+                        </li>
+                        <li class="dropdown__item">
+                          <div class="dropdown__img-box">
+                            <svg class="dropdown__img">
+                              <use xlink:href="svg/feature.svg#life"/>
+                            </svg>
+                          </div>
+                          <div class="dropdown__text">Life time</div>
+                          <div class="dropdown__value">5 years</div>
+                        </li>
+                        <li class="dropdown__item">
+                          <div class="dropdown__img-box">
+                            <svg class="dropdown__img">
+                              <use xlink:href="svg/feature.svg#weigth"/>
+                            </svg>
+                          </div>
+                          <div class="dropdown__text">Weight</div>
+                          <div class="dropdown__value">7-8 kg</div>
+                        </li>
+                      </ul>
+                    </div>
+                    <h2>Longboard 2.0</h2>
+                    <p class="slider__text">A stable board for beginners. They are easy to lie, sit, row, row
+                      on the waves and go.
+                      The size and buoyancy of the board allows you to take very small and gentle waves and slowly, without applying special
+                      effort to ride them.
+                    </p>
+                    <ul class="slider__info-list">
+                      <li class="slider__info-item">
+                        <div class="slider__info-name">Board length</div>
+                        <div class="slider__info-value">from 2.5 meters</div>
+                      </li>
+                      <li class="slider__info-item">
+                        <div class="slider__info-name">Board width</div>
+                        <div class="slider__info-value">from 40 centimeters</div>
+                      </li>
+                    </ul>
+                    <div class="slider__price">
+                      <span>700 $</span>
+                      <div class="slider__btn">
+                        <a href="#" class="btn" data-scroll-to="form">Order</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider__item">
+                  <div class="slider__img-box">
+                    <img src="./images/board2.png" alt="" class="slider__img">
+                  </div>
+                  <div class="slider__info">
+                    <div class="slider__dropdown dropdown">
+                      <button class="dropdown__button">
+                        <svg class="dropdown__img-arrow">
+                          <use xlink:href="svg/feature.svg#param"/>
+                        </svg>
+                        <div class="dropdown__param">options</div>
+                      </button>
+                      <ul class="dropdown__list">
+                        <li class="dropdown__item">
+                          <div class="dropdown__img-box">
+                            <svg class="dropdown__img">
+                              <use xlink:href="svg/feature.svg#length"/>
+                            </svg>
+                          </div>
+                          <div class="dropdown__text">Board length</div>
+                          <div class="dropdown__value">from 1.5 m</div>
+                        </li>
+                        <li class="dropdown__item">
+                          <div class="dropdown__img-box">
+                            <svg class="dropdown__img">
+                              <use xlink:href="svg/feature.svg#width"/>
+                            </svg>
+                          </div>
+                          <div class="dropdown__text">Board width</div>
+                          <div class="dropdown__value">from 30 cm</div>
+                        </li>
+                        <li class="dropdown__item">
+                          <div class="dropdown__img-box">
+                            <svg class="dropdown__img">
+                              <use xlink:href="svg/feature.svg#thickness"/>
+                            </svg>
+                          </div>
+                          <div class="dropdown__text">Thickness</div>
+                          <div class="dropdown__value">8 cm</div>
+                        </li>
+                        <li class="dropdown__item">
+                          <div class="dropdown__img-box">
+                            <svg class="dropdown__img">
+                              <use xlink:href="svg/feature.svg#life"/>
+                            </svg>
+                          </div>
+                          <div class="dropdown__text">Life time</div>
+                          <div class="dropdown__value">5 years</div>
+                        </li>
+                      <li class="dropdown__item">
+                      <div class="dropdown__img-box">
+                        <svg class="dropdown__img">
+                          <use xlink:href="svg/feature.svg#weigth"/>
+                        </svg>
+                      </div>
+                      <div class="dropdown__text">Weight</div>
+                      <div class="dropdown__value">7-8 kg</div>
+                      </li>
+                    </ul>
+                    </div>
+                    <h2>Shortboard</h2>
+                    <p class="slider__text">The fastest boards for professionals. Shortboard sizes allow you to quickly
+                      gain speed, do various tricks on the wave, including sharp turns and turns, floaters
+                      (driving along the very crest of the wave), various jumps with or without spins, as well as skating
+                      in pipes.
+                    </p>
+                    <ul class="slider__info-list">
+                      <li class="slider__info-item">
+                        <div class="slider__info-name">Board length</div>
+                        <div class="slider__info-value">from 1.5 meters</div>
+                      </li>
+                      <li class="slider__info-item">
+                        <div class="slider__info-name">Board width</div>
+                        <div class="slider__info-value">from 30 centimeters</div>
+                      </li>
+                    </ul>
+                    <div class="slider__price">
+                      <span>1200 $</span>
+                      <div class="slider__btn">
+                        <a href="#" class="btn" data-scroll-to="form">Order</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
           </div>
-          <ul class="slider__list">
-            <li class="slider__item">
-              <div class="slider__img-box">
-                <img src="./images/board1.png" alt="" class="slider__img">
-              </div>
-              <div class="slider__info">
-                <div class="slider__dropdown dropdown">
-                  <button class="dropdown__button">
-                    <svg class="dropdown__img-arrow">
-                      <use xlink:href="svg/feature.svg#param"/>
-                    </svg>
-                    <div class="dropdown__param">options</div>
-                  </button>
-                  <ul class="dropdown__list">
-                    <li class="dropdown__item">
-                      <div class="dropdown__img-box">
-                        <svg class="dropdown__img">
-                          <use xlink:href="svg/feature.svg#length"/>
-                        </svg>
-                      </div>
-                      <div class="dropdown__text">Board length</div>
-                      <div class="dropdown__value">from 2.5 m</div>
-                    </li>
-                    <li class="dropdown__item">
-                      <div class="dropdown__img-box">
-                        <svg class="dropdown__img">
-                          <use xlink:href="svg/feature.svg#width"/>
-                        </svg>
-                      </div>
-                      <div class="dropdown__text">Board width</div>
-                      <div class="dropdown__value">from 40 cm</div>
-                    </li>
-                    <li class="dropdown__item">
-                      <div class="dropdown__img-box">
-                        <svg class="dropdown__img">
-                          <use xlink:href="svg/feature.svg#thickness"/>
-                        </svg>
-                      </div>
-                      <div class="dropdown__text">Thickness</div>
-                      <div class="dropdown__value">8 cm</div>
-                    </li>
-                    <li class="dropdown__item">
-                      <div class="dropdown__img-box">
-                        <svg class="dropdown__img">
-                          <use xlink:href="svg/feature.svg#life"/>
-                        </svg>
-                      </div>
-                      <div class="dropdown__text">Life time</div>
-                      <div class="dropdown__value">5 years</div>
-                    </li>
-                    <li class="dropdown__item">
-                      <div class="dropdown__img-box">
-                        <svg class="dropdown__img">
-                          <use xlink:href="svg/feature.svg#weigth"/>
-                        </svg>
-                      </div>
-                      <div class="dropdown__text">Weight</div>
-                      <div class="dropdown__value">7-8 kg</div>
-                    </li>
-                  </ul>
-                </div>
-                <h2>Longboard 2.0</h2>
-                <p class="slider__text">A stable board for beginners. They are easy to lie, sit, row, row
-                  on the waves and go.
-                  The size and buoyancy of the board allows you to take very small and gentle waves and slowly, without applying special
-                  effort to ride them.
-                </p>
-                <ul class="slider__info-list">
-                  <li class="slider__info-item">
-                    <div class="slider__info-name">Board length</div>
-                    <div class="slider__info-value">from 2.5 meters</div>
-                  </li>
-                  <li class="slider__info-item">
-                    <div class="slider__info-name">Board width</div>
-                    <div class="slider__info-value">from 40 centimeters</div>
-                  </li>
-                </ul>
-                <div class="slider__price">
-                  <span>700 $</span>
-                  <div class="slider__btn">
-                    <a href="#" class="btn" data-scroll-to="form">Order</a>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="slider__item">
-              <div class="slider__img-box">
-                <img src="./images/board2.png" alt="" class="slider__img">
-              </div>
-              <div class="slider__info">
-                <div class="slider__dropdown dropdown">
-                  <button class="dropdown__button">
-                    <svg class="dropdown__img-arrow">
-                      <use xlink:href="svg/feature.svg#param"/>
-                    </svg>
-                    <div class="dropdown__param">options</div>
-                  </button>
-                  <ul class="dropdown__list">
-                    <li class="dropdown__item">
-                      <div class="dropdown__img-box">
-                        <svg class="dropdown__img">
-                          <use xlink:href="svg/feature.svg#length"/>
-                        </svg>
-                      </div>
-                      <div class="dropdown__text">Board length</div>
-                      <div class="dropdown__value">from 1.5 m</div>
-                    </li>
-                    <li class="dropdown__item">
-                      <div class="dropdown__img-box">
-                        <svg class="dropdown__img">
-                          <use xlink:href="svg/feature.svg#width"/>
-                        </svg>
-                      </div>
-                      <div class="dropdown__text">Board width</div>
-                      <div class="dropdown__value">from 30 cm</div>
-                    </li>
-                    <li class="dropdown__item">
-                      <div class="dropdown__img-box">
-                        <svg class="dropdown__img">
-                          <use xlink:href="svg/feature.svg#thickness"/>
-                        </svg>
-                      </div>
-                      <div class="dropdown__text">Thickness</div>
-                      <div class="dropdown__value">8 cm</div>
-                    </li>
-                    <li class="dropdown__item">
-                      <div class="dropdown__img-box">
-                        <svg class="dropdown__img">
-                          <use xlink:href="svg/feature.svg#life"/>
-                        </svg>
-                      </div>
-                      <div class="dropdown__text">Life time</div>
-                      <div class="dropdown__value">5 years</div>
-                    </li>
-                  <li class="dropdown__item">
-                  <div class="dropdown__img-box">
-                    <svg class="dropdown__img">
-                      <use xlink:href="svg/feature.svg#weigth"/>
-                    </svg>
-                  </div>
-                  <div class="dropdown__text">Weight</div>
-                  <div class="dropdown__value">7-8 kg</div>
-                  </li>
-                </ul>
-                </div>
-                <h2>Shortboard</h2>
-                <p class="slider__text">The fastest boards for professionals. Shortboard sizes allow you to quickly
-                  gain speed, do various tricks on the wave, including sharp turns and turns, floaters
-                  (driving along the very crest of the wave), various jumps with or without spins, as well as skating
-                  in pipes.
-                </p>
-                <ul class="slider__info-list">
-                  <li class="slider__info-item">
-                    <div class="slider__info-name">Board length</div>
-                    <div class="slider__info-value">from 1.5 meters</div>
-                  </li>
-                  <li class="slider__info-item">
-                    <div class="slider__info-name">Board width</div>
-                    <div class="slider__info-value">from 30 centimeters</div>
-                  </li>
-                </ul>
-                <div class="slider__price">
-                  <span>1200 $</span>
-                  <div class="slider__btn">
-                    <a href="#" class="btn" data-scroll-to="form">Order</a>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="slider__item">
-              <div class="slider__img-box">
-                <img src="./images/board1.png" alt="" class="slider__img">
-              </div>
-              <div class="slider__info">
-                <div class="slider__dropdown dropdown">
-                  <button class="dropdown__button">
-                    <svg class="dropdown__img-arrow">
-                      <use xlink:href="svg/feature.svg#param"/>
-                    </svg>
-                    <div class="dropdown__param">options</div>
-                  </button>
-                  <ul class="dropdown__list">
-                    <li class="dropdown__item">
-                      <div class="dropdown__img-box">
-                        <svg class="dropdown__img">
-                          <use xlink:href="svg/feature.svg#length"/>
-                        </svg>
-                      </div>
-                      <div class="dropdown__text">Board length</div>
-                      <div class="dropdown__value">from 2.5 m</div>
-                    </li>
-                    <li class="dropdown__item">
-                      <div class="dropdown__img-box">
-                        <svg class="dropdown__img">
-                          <use xlink:href="svg/feature.svg#width"/>
-                        </svg>
-                      </div>
-                      <div class="dropdown__text">Board width</div>
-                      <div class="dropdown__value">from 40 cm</div>
-                    </li>
-                    <li class="dropdown__item">
-                      <div class="dropdown__img-box">
-                        <svg class="dropdown__img">
-                          <use xlink:href="svg/feature.svg#thickness"/>
-                        </svg>
-                      </div>
-                      <div class="dropdown__text">Thickness</div>
-                      <div class="dropdown__value">8 cm</div>
-                    </li>
-                    <li class="dropdown__item">
-                      <div class="dropdown__img-box">
-                        <svg class="dropdown__img">
-                          <use xlink:href="svg/feature.svg#life"/>
-                        </svg>
-                      </div>
-                      <div class="dropdown__text">Life time</div>
-                      <div class="dropdown__value">5 years</div>
-                    </li>
-                    <li class="dropdown__item">
-                      <div class="dropdown__img-box">
-                        <svg class="dropdown__img">
-                          <use xlink:href="svg/feature.svg#weigth"/>
-                        </svg>
-                      </div>
-                      <div class="dropdown__text">Weight</div>
-                      <div class="dropdown__value">7-8 kg</div>
-                    </li>
-                  </ul>
-                </div>
-                <h2>Longboard 2.0</h2>
-                <p class="slider__text">A stable board for beginners. They are easy to lie, sit, row, row
-                  on the waves and go.
-                  The size and buoyancy of the board allows you to take very small and gentle waves and slowly, without applying special
-                  effort to ride them.
-                </p>
-                <ul class="slider__info-list">
-                  <li class="slider__info-item">
-                    <div class="slider__info-name">Board length</div>
-                    <div class="slider__info-value">from 2.5 meters</div>
-                  </li>
-                  <li class="slider__info-item">
-                    <div class="slider__info-name">Board width</div>
-                    <div class="slider__info-value">from 40 centimeters</div>
-                  </li>
-                </ul>
-                <div class="slider__price">
-                  <span>700 $</span>
-                  <div class="slider__btn">
-                    <a href="#" class="btn" data-scroll-to="form">Order</a>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="slider__item">
-              <div class="slider__img-box">
-                <img src="./images/board2.png" alt="" class="slider__img">
-              </div>
-              <div class="slider__info">
-                <div class="slider__dropdown dropdown">
-                  <button class="dropdown__button">
-                    <svg class="dropdown__img-arrow">
-                      <use xlink:href="svg/feature.svg#param"/>
-                    </svg>
-                    <div class="dropdown__param">options</div>
-                  </button>
-                  <ul class="dropdown__list">
-                    <li class="dropdown__item">
-                      <div class="dropdown__img-box">
-                        <svg class="dropdown__img">
-                          <use xlink:href="svg/feature.svg#length"/>
-                        </svg>
-                      </div>
-                      <div class="dropdown__text">Board length</div>
-                      <div class="dropdown__value">from 1.5 m</div>
-                    </li>
-                    <li class="dropdown__item">
-                      <div class="dropdown__img-box">
-                        <svg class="dropdown__img">
-                          <use xlink:href="svg/feature.svg#width"/>
-                        </svg>
-                      </div>
-                      <div class="dropdown__text">Board width</div>
-                      <div class="dropdown__value">from 30 cm</div>
-                    </li>
-                    <li class="dropdown__item">
-                      <div class="dropdown__img-box">
-                        <svg class="dropdown__img">
-                          <use xlink:href="svg/feature.svg#thickness"/>
-                        </svg>
-                      </div>
-                      <div class="dropdown__text">Thickness</div>
-                      <div class="dropdown__value">8 cm</div>
-                    </li>
-                    <li class="dropdown__item">
-                      <div class="dropdown__img-box">
-                        <svg class="dropdown__img">
-                          <use xlink:href="svg/feature.svg#life"/>
-                        </svg>
-                      </div>
-                      <div class="dropdown__text">Life time</div>
-                      <div class="dropdown__value">5 years</div>
-                    </li>
-                  <li class="dropdown__item">
-                  <div class="dropdown__img-box">
-                    <svg class="dropdown__img">
-                      <use xlink:href="svg/feature.svg#weigth"/>
-                    </svg>
-                  </div>
-                  <div class="dropdown__text">Weight</div>
-                  <div class="dropdown__value">7-8 kg</div>
-                  </li>
-                </ul>
-                </div>
-                <h2>Shortboard</h2>
-                <p class="slider__text">The fastest boards for professionals. Shortboard sizes allow you to quickly
-                  gain speed, do various tricks on the wave, including sharp turns and turns, floaters
-                  (driving along the very crest of the wave), various jumps with or without spins, as well as skating
-                  in pipes.
-                </p>
-                <ul class="slider__info-list">
-                  <li class="slider__info-item">
-                    <div class="slider__info-name">Board length</div>
-                    <div class="slider__info-value">from 1.5 meters</div>
-                  </li>
-                  <li class="slider__info-item">
-                    <div class="slider__info-name">Board width</div>
-                    <div class="slider__info-value">from 30 centimeters</div>
-                  </li>
-                </ul>
-                <div class="slider__price">
-                  <span>1200 $</span>
-                  <div class="slider__btn">
-                    <a href="#" class="btn" data-scroll-to="form">Order</a>
-                  </div>
-                </div>
-              </div>
-            </li>
-          </ul>
         </div>
-
       </section>
 
       <section class="team section" data-section-id="team" data-fixed-menu-theme="dark">
@@ -865,7 +692,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.5/mobile-detect.min.js" integrity="sha512-1vJtouuOb2tPm+Jh7EnT2VeiCoWv0d7UQ8SGl/2CoOU+bkxhxSX4gDjmdjmbX4OjbsbCBN+Gytj4RGrjV3BLkQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="./js/ops.js"></script>
   <script src="./js/hamburger.js"></script>
-  <script src="./js/slider.js"></script>
+  <script src="./js/swiper.js"></script>
   <script src="./js/review.js"></script>
   <script src="./js/accordeon.js"></script>
   <script src="./js/team.js"></script>
