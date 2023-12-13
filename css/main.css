@@ -919,7 +919,9 @@ path {
   margin-bottom: 1.3333333333rem; }
   @media (max-width: 480px) {
     .slider__text {
-      line-height: 1.1; } }
+      line-height: 1.1;
+      width: 80%;
+      margin: 10px auto; } }
 
 .slider__info-list {
   display: -webkit-box;

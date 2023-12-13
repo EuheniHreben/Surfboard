@@ -69,6 +69,8 @@
   margin-bottom: rem(24px);
   @include phones {
     line-height: 1.1;
+    width: 80%;
+    margin: 10px auto;
   }
 }
 
