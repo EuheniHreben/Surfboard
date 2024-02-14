@@ -41,7 +41,7 @@
 .accordeon__link {
   position: relative;
   width: rem(130px);
-  transition: box-shadow .4s linear;
+  transition: box-shadow .2s ease-in-out;
   &:hover {
     box-shadow: 0 0 60px 15px #8ca3ad;
   }
@@ -74,7 +74,7 @@
   background-color: rgba(51, 53, 55, 0.8);
   backdrop-filter: blur(10px);
   overflow: hidden;
-  transition: width .4s linear;
+  transition: width .2s ease-in-out;
   cursor: pointer;
 }
 

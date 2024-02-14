@@ -870,7 +870,8 @@ path {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 2.2222222222rem; }
+  gap: 2.2222222222rem;
+  cursor: pointer; }
   @media (max-width: 480px) {
     .slider__item {
       -webkit-box-orient: vertical;
@@ -1238,10 +1239,10 @@ path {
 .accordeon__link {
   position: relative;
   width: 7.2222222222rem;
-  -webkit-transition: -webkit-box-shadow .4s linear;
-  transition: -webkit-box-shadow .4s linear;
-  transition: box-shadow .4s linear;
-  transition: box-shadow .4s linear, -webkit-box-shadow .4s linear; }
+  -webkit-transition: -webkit-box-shadow .2s ease-in-out;
+  transition: -webkit-box-shadow .2s ease-in-out;
+  transition: box-shadow .2s ease-in-out;
+  transition: box-shadow .2s ease-in-out, -webkit-box-shadow .2s ease-in-out; }
   .accordeon__link:hover {
     -webkit-box-shadow: 0 0 60px 15px #8ca3ad;
             box-shadow: 0 0 60px 15px #8ca3ad; }
@@ -1272,8 +1273,8 @@ path {
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
   overflow: hidden;
-  -webkit-transition: width .4s linear;
-  transition: width .4s linear;
+  -webkit-transition: width .2s ease-in-out;
+  transition: width .2s ease-in-out;
   cursor: pointer; }
 
 .accordeon__desc {
@@ -1393,8 +1394,8 @@ path {
 .team__desc {
   height: 0;
   cursor: pointer;
-  -webkit-transition: height .2s linear;
-  transition: height .2s linear;
+  -webkit-transition: height .2s ease-in-out;
+  transition: height .2s ease-in-out;
   overflow: hidden; }
   @media (max-width: 480px) {
     .team__desc {
@@ -1872,6 +1873,21 @@ path {
     -webkit-transition: background .4s linear;
     transition: background .4s linear; }
 
+.fixed-menu__text {
+  position: absolute;
+  color: #fff;
+  text-shadow: 1px 1px black;
+  font-weight: 600;
+  font-size: 1rem;
+  top: -3px;
+  right: 9999px;
+  width: 150px;
+  text-align: right;
+  opacity: 0;
+  z-index: 100;
+  -webkit-transition: opacity .4s linear;
+  transition: opacity .4s linear; }
+
 .fixed-menu__link {
   display: block;
   width: 1.2222222222rem;
@@ -1908,20 +1924,5 @@ path {
   .fixed-menu__link:active {
     -webkit-transform: translateY(2px);
             transform: translateY(2px); }
-
-.fixed-menu__text {
-  position: absolute;
-  color: #fff;
-  text-shadow: 1px 1px black;
-  font-weight: 600;
-  font-size: 1rem;
-  top: -3px;
-  right: 9999px;
-  width: 150px;
-  text-align: right;
-  opacity: 0;
-  z-index: 100;
-  -webkit-transition: opacity .4s linear;
-  transition: opacity .4s linear; }
 
 /*# sourceMappingURL=main.css.map */
