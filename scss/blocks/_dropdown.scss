@@ -3,7 +3,7 @@
   display: inline-flex;
   &:hover {
     .dropdown__list {
-      left: 100%;
+      max-height: 250px;
       opacity: 1;
     }
   }
@@ -45,13 +45,16 @@
 
 .dropdown__list {
   position: absolute;
-  right: 9999px;
+  left: 100%;
   opacity: 0;
+  max-height: 0px;
   background-color: #d6d6d6;
   padding: rem(10px);
   border-radius: 5px;
   width: rem(280px);
   transition: opacity .2s linear;
+  transition: max-height .4s ease-out;
+  overflow: hidden;
   cursor: pointer;
 }
 

@@ -1723,7 +1723,7 @@ path {
   display: -ms-inline-flexbox;
   display: inline-flex; }
   .dropdown:hover .dropdown__list {
-    left: 100%;
+    max-height: 250px;
     opacity: 1; }
   @media (max-width: 480px) {
     .dropdown {
@@ -1767,14 +1767,18 @@ path {
 
 .dropdown__list {
   position: absolute;
-  right: 9999px;
+  left: 100%;
   opacity: 0;
+  max-height: 0px;
   background-color: #d6d6d6;
   padding: 0.5555555556rem;
   border-radius: 5px;
   width: 15.5555555556rem;
   -webkit-transition: opacity .2s linear;
   transition: opacity .2s linear;
+  -webkit-transition: max-height .4s ease-out;
+  transition: max-height .4s ease-out;
+  overflow: hidden;
   cursor: pointer; }
 
 .dropdown__item {
