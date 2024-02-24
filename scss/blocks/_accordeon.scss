@@ -1,0 +1,84 @@
+.accordeon {
+  background: url(../images/background/accordeon.png) center center / cover no-repeat;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  position: relative;
+  h2 {
+    padding-top: 10%;
+  }
+}
+
+.accordeon__list {
+  position: absolute;
+  display: flex;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  @include phones {
+    width: 100%;
+    justify-content: flex-end;
+  }
+}
+
+.accordeon__item {
+  display: flex;
+  @include phones {
+    &--active {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      z-index: 100;
+    }
+  }
+  &--active {
+    opacity: 1;
+  }
+}
+
+.accordeon__link {
+  position: relative;
+  width: rem(130px);
+  transition: box-shadow .2s ease-in-out;
+  &:hover {
+    box-shadow: 0 0 60px 15px #8ca3ad;
+  }
+  &--first {
+    background: url(../images/acc.png) center center / cover no-repeat;
+  }
+  &--second {
+    background: url(../images/acc1.png) center center / cover no-repeat;
+  }
+  &--third {
+    background: url(../images/acc2.png) center center / cover no-repeat;
+  }
+  @include phones {
+    width: rem(80px);
+  }
+}
+
+.accordeon__link-title {
+  position: absolute;
+  transform: rotate(-90deg) translateY(-50%);
+  transform-origin: 0 0;
+  font-size: rem(40px);
+  left: 50%;
+  font-weight: 600;
+  bottom: 20%;
+}
+
+.accordeon__content {
+  width: 0px;
+  background-color: rgba(51, 53, 55, 0.8);
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+  transition: width .2s ease-in-out;
+  cursor: pointer;
+}
+
+.accordeon__desc {
+  padding: rem(36px);
+  line-height: 1.5;
+}

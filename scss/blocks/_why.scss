@@ -1,69 +1,93 @@
 .why {
-  padding-top: 100px;
-  padding-bottom: 110px;
-}
-
-.why__title {
-  text-transform: uppercase;
-  color: #000;
-  margin-bottom: 20px;
-  text-align: center;
+  padding: rem(100px) 0px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  h2 {
+    text-transform: uppercase;
+    color: #000;
+    text-align: center;
+    letter-spacing: 2px;
+  }
+  @include phones {
+    padding: rem(40px) 0px;
+  }
 }
 
 .why__subtitle {
   color: #666;
+  max-width: 50%;
+  margin: 0px auto rem(50px) auto;
   text-align: center;
-  align-items: center;
-  margin-bottom: 50px;
+  @include phones {
+    max-width: 90%;
+  }
 }
 
 .why__list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: rem(80px);
+  @include phones {
+    flex-direction: column;
+    gap: rem(30px);
+  }
 }
 
 .why__item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 25%;
+  max-width: rem(267px);
   position: relative;
-
-  &::before {
-    display: block;
-    position: absolute;
-    content: "";
-    width: 67px;
-    height: 21px;
-    background: url(/images/icons/circles.png);
-    top: 18%;
-    right: -34%;
-  }
-
-  &:last-child::before {
-    display: none;
+  line-height: 1.1;
+  @include phones {
+    flex-direction: row;
+    max-width: 100%;
+    height: 100%;
   }
 }
 
 .why__img-box {
   display: flex;
   background: #F2F5F4;
-  width: 128px;
-  height: 128px;
+  width: rem(128px);
+  height: rem(128px);
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  margin-bottom: 20px;
+  margin-bottom: rem(20px);
+  flex-shrink: 0;
+  @include phones {
+    margin-bottom: 0px;
+  }
 }
 
-.why__item-title {
-  color: #000;
-  font-size: 28px;
-  font-weight: bold;
-  margin-bottom: 20px;
+.why__img {
+  width: 68px;
+  height: 68px;
+  fill: #000;
 }
 
-.why__item-text {
+.why__desc {
   text-align: center;
+  @include phones {
+    text-align: left;
+    padding-left: 12px;
+  }
+}
+
+.why__desc h3 {
+  color: #000;
+  font-size: rem(28px);
+  font-weight: bold;
+  margin-bottom: rem(20px);
+  @include phones {
+    margin-bottom: rem(10px);
+  }
+}
+
+.why__desc p {
   color: #666;
+  margin-right: 10px;
 }

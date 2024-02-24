@@ -1,6 +1,20 @@
+.logo__img-box {
+  @include phones {
+    padding: 0px rem(20px);
+  }
+}
+
 .logo__img {
   display: block;
-  width: 55px;
+  width: 56px;
   height: 40px;
-  margin-right: 50px;
+  margin-right: rem(50px);
+  fill: #fff;
+  transition: fill .2s linear;
+  &:hover {
+    fill: $yellow;
+  }
+  @include phones {
+    margin-right: 0px;
+  }
 }

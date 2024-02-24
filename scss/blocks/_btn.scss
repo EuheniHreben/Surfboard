@@ -1,9 +1,25 @@
 .btn {
   display: inline-flex;
-  padding: 20px 40px;
-  background-color: #FEDB3F;
-  color: #000;
-  font-size: 16px;
-  font-weight: bolder;
-  border-radius: 100px;
+  text-align: center;
+  justify-content: center;
+  border: 1px solid transparent;
+  padding: rem(16px) rem(40px);
+  margin: rem(4px);
+  background-color: $yellow;
+  color: $black;
+  font-size: rem(18px);
+  font-weight:800;
+  border-radius: rem(44px);
+  text-transform: uppercase;
+  transition: background .2s linear;
+  outline: none;
+  cursor: pointer; 
+  transition: transform .1s linear;
+  &:active {
+    transform: translateY(4px);
+  }
+}
+
+.btn_type_second {
+  background: $gray;
 }

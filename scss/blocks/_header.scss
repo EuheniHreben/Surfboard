@@ -1,4 +1,28 @@
 .header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  position: relative;
+  @include phones {
+    background-color: #1968B1;
+  }
+}
+
+.header__nav {
+  &.active {
+    left: 0;
+  }
+  @include phones {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    left: -100%;
+    top: 0;
+    display: flex;
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    background: #0d0d0df5;
+    transition: left .4s ease-in-out;
+  }
 }

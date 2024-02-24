@@ -1,0 +1,14 @@
+.social__list {
+  display: flex;
+  gap: 14px;
+}
+
+.social__img {
+  width: 20px;
+  height: 20px;
+  fill: #B3B3B3;
+  transition: fill .2s linear;
+  &:hover {
+    fill: #000;
+  }
+}

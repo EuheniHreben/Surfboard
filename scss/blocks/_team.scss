@@ -1,0 +1,117 @@
+.team {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  h2 {
+    text-align: center;
+    margin-bottom: rem(50px);
+    @include phones {
+      font-size: rem(36px);
+    }
+  }
+}
+
+.team__list {
+  display: flex;
+  justify-content: center;
+  min-height: 450px;
+  @include phones {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.team__item {
+  width: 22%;
+  text-align: center;
+  margin-right: rem(20px);
+  @include phones {
+    width: 100%;
+    height: 100%;
+    margin-right: 0px;
+  }
+}
+  
+.team__name {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  &:after {
+    content: "";
+    display: block;
+    z-index: 1000;
+    margin-left: 8px;
+    cursor: pointer;
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-135deg);
+    transition: transform .2s linear;
+  }
+  &--active {
+    &::after {
+      transform: rotate(45deg);
+      border-width: 0 3px 3px 0;
+    }
+  }
+}
+
+.team__img-box {
+  &--phone {
+    display: none;
+    @include phones {
+      display: flex;
+      justify-content: center;
+      padding-top: rem(10px);
+    }
+  }
+}
+
+.team__img {
+  margin-bottom: 24px;
+  cursor: pointer;
+  width: 100%;
+  @include phones {
+    display: none;
+    margin-bottom: 0px;
+  }
+}
+
+.team__img-mini {
+  margin-bottom: 24px;
+  width: 100%;
+  @include phones {
+    max-width: rem(138px);
+    max-height: rem(220px);
+  }
+}
+
+.team__desc {
+  height: 0;
+  cursor: pointer;
+  transition: height .2s ease-in-out;
+  overflow: hidden;
+  @include phones {
+    margin-bottom: 12px;
+  }
+}
+
+.team__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.team__job {
+  font-weight: 600;
+}
+
+.team__text {
+  color: #666666a8;
+}

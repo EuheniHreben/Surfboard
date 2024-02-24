@@ -1,12 +1,28 @@
 .title {
-  max-width: 600px;
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  @include phones {
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+  }
 }
 
-.title__main {
-  margin-bottom: 20px;
+.title h1 {
   text-transform: uppercase;
+  margin-bottom: rem(6px);
+  @include phones {
+    font-size: rem(30px);
+  }
 }
 
-.title__subtitle {
-  margin-bottom: 40px;
+.title p {
+  margin-bottom: rem(30px);
+  font-size: rem(24px);
+  @include phones {
+    font-size: rem(18px);
+  }
 }

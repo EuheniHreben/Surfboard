@@ -1,0 +1,98 @@
+.fixed-menu {
+  position: fixed;
+  right: 5%;
+  top: 34%;
+  z-index: 1000;
+  &--dark {
+    .fixed-menu__item {
+      &--active {
+        .fixed-menu__link::before {
+          background: #fff;
+          border: 2px solid #000;
+        }
+      }
+    }
+    .fixed-menu__link::before {
+      border: 2px solid #000;
+      background: #000;
+    }
+    .fixed-menu__text {
+      color: #000;
+      text-shadow: none;
+    }
+  }
+  @include phones {
+    display: none;
+  }
+}
+
+.fixed-menu__item {
+  margin-bottom: rem(5px);
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 20px;
+    right: 0;
+  }
+  &--active {
+    .fixed-menu__link::before {
+      background: #fff;
+      border: 2px solid #000;
+      transition: background .4s linear;
+    }
+  }
+}
+
+.fixed-menu__text {
+  position: absolute;
+  color: #fff;
+  text-shadow: 1px 1px black;
+  font-weight: 600;
+  font-size: 1rem;
+  top: -3px;
+  right: 9999px;
+  width: 150px;
+  text-align: right;
+  opacity: 0;
+  z-index: 100;
+  transition: opacity .4s linear;
+}
+
+.fixed-menu__link {
+  display: block;
+  width: rem(22px);
+  height: rem(22px);
+  border-radius: 50%;
+  border: 1px solid transparent;
+  position: relative;
+  margin: 8px;
+  &::before {
+    content: "";
+    display: block;
+    width: rem(6px);
+    height: rem(6px);
+    opacity: 60%;
+    border: 2px solid #fff;
+    background: #000;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    transition: background .4s linear;
+    transition: border .2s linear;
+    transition: transform .2s linear;
+  }
+  &:hover {
+    .fixed-menu__text {
+      left: -160px;
+      opacity: 1;
+    }
+  }
+  &:active {
+    transform: translateY(2px);
+  }
+}

@@ -1,3 +1,123 @@
 .slider {
   background-color: #F8FAF9;
+  padding: rem(30px) 0px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  .bx-wrapper {
+    background-color: #F8FAF9;
+    padding: 0px;
+    margin: 0px;
+    border: none;
+    box-shadow: none;
+  }
+  @include phones {
+    padding: rem(30px) 0px;
+  }
+}
+
+.slider__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: rem(40px);
+  cursor: pointer;
+  @include phones {
+    flex-direction: column;
+    gap: 0px;
+  }
+}
+
+.slider__img-box {
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  width: 45%;
+  @include phones {
+    width: 100%;
+  }
+}
+
+.slider__img {
+  @include phones {
+    max-height: rem(300px);
+    margin-right: rem(0px);
+  }
+}
+
+.slider__info {
+  max-width: 40%;
+  @include phones {
+    max-width: 80%;
+    text-align: center;
+  }
+}
+
+.slider__dropdown {
+  margin-bottom: rem(50px);
+}
+
+.slider__info h2 {
+  margin-bottom: rem(18px);
+  @include phones {
+    margin-bottom: 0px;
+  }
+}
+
+.slider__text {
+  color: $gray;
+  margin-bottom: rem(24px);
+  @include phones {
+    line-height: 1.1;
+    width: 80%;
+    margin: 10px auto;
+  }
+}
+
+.slider__info-list {
+  display: flex;
+  margin-bottom: rem(24px);
+  @include phones {
+    justify-content: center;
+    margin-bottom: rem(14px);
+  }
+}
+
+.slider__info-item {
+  padding-right: rem(55px);
+  @include phones {
+    padding: 0px rem(20px) 0px;
+    text-align: left;
+  }
+}
+
+.slider__info-value {
+  font-weight: bold;
+}
+
+.slider__price {
+  display: flex;
+  align-items: center;
+  @include phones {
+    justify-content: center;
+  }
+}
+
+.slider__price span {
+  font-size: rem(60px);
+  padding: 0px rem(20px) 0px 0px;
+  white-space: nowrap;
+  @include phones {
+    font-size: rem(40px);
+    padding: 0px rem(20px) 0px;
+  }
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    background-color: transparent;
+    right: 10px;
+    padding: 30px;
+    color: $gray;
 }
