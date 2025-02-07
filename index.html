@@ -109,7 +109,7 @@
                     <use xlink:href="svg/feature.svg#main2"/>
                   </svg>
                 </div>
-                <p>Уникальный дизайн</p>
+                <p class="features__text">Уникальный дизайн</p>
               </li>
               <li class="features__item">
                 <div class="features__img-box">
@@ -117,7 +117,7 @@
                     <use xlink:href="svg/feature.svg#main3"/>
                   </svg>
                 </div>
-                <p>Прочные материалы</p>
+                <p class="features__text">Прочные материалы</p>
               </li>
               <li class="features__item">
                 <div class="features__img-box">
@@ -125,7 +125,7 @@
                     <use xlink:href="svg/feature.svg#main1"/>
                   </svg>
                 </div>
-                <p>Быстрая доставка</p>
+                <p class="features__text">Быстрая доставка</p>
               </li>
             </ul>
           </div>
@@ -457,7 +457,7 @@
 
       <section class="reviews section" data-section-id="reviews" data-fixed-menu-theme="dark">
         <div class="container">
-          <h2>Отзывы</h2>
+          <h2 class="reviews__title">Отзывы</h2>
           <ul class="reviews__list">
             <li class="reviews__item reviews__item--active" data-item="1">
               <div class="reviews__img-box">
@@ -593,18 +593,27 @@
                 </label>
               </div>
               <div class="form__group form__group--btn">
-                <input type="radio" name="order" value="cash" id="cash">
-                <label for="cash">Оплата наличными</label>
-                <input type="radio" name="order" value="card" id="card">
-                <label for="card">Оплата картой</label>
+                <label class="custom-checkbox">
+                  <input type="radio" name="order" value="cash" id="cash" class="custom-checkbox__input">
+                  <span class="custom-checkbox__icon"></span>
+                  <span class="custom-checkbox__text">Оплата наличными</span>
+                </label>
+                <label class="custom-checkbox">
+                  <input type="radio" name="order" value="card" id="card" class="custom-checkbox__input">
+                  <span class="custom-checkbox__icon"></span>
+                  <span class="custom-checkbox__text">Оплата картой</span>
+                </label>
               </div>
               <div class="form__group form__group--btn">
-                <input type="checkbox" name="order" value="card" id="no-call">
-                <label for="no-call">Не перезванивать</label>
+                <label class="custom-checkbox">
+                  <input type="checkbox" name="order" value="card" id="no-call" class="custom-checkbox__input">
+                  <span class="custom-checkbox__icon"></span>
+                  <span class="custom-checkbox__text">Не перезванивать</span>
+                </label>
               </div>
               <div class="form__group form__group--btn">
-                <button type="submit" class="btn" id="sendButtonRu">Заказать</button>
                 <button type="reset" class="btn btn_type_second">Очистить</button>
+                <button type="submit" class="btn" id="sendButtonRu">Заказать</button>
               </div>
             </div>
           </form>
@@ -665,7 +674,7 @@
   </div>
 
   <nav class="fixed-menu">
-    <ul class="fixed-menu__list">
+    <ul class="fixed-menu__list fixed-menu__list--bg">
       <li class="fixed-menu__item fixed-menu__item--active"><a href="#" class="fixed-menu__link" data-scroll-to="hero"><div class="fixed-menu__text">Главная</div></a></li>
       <li class="fixed-menu__item"><a href="#" class="fixed-menu__link" data-scroll-to="why"><div class="fixed-menu__text">О нас</div></a></li>
       <li class="fixed-menu__item"><a href="#" class="fixed-menu__link" data-scroll-to="slider"><div class="fixed-menu__text">Серфборды</div></a></li>

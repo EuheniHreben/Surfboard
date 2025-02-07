@@ -2,10 +2,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  h2 {
-    text-align: center;
-    margin-bottom: rem(22px);
-  }
+}
+
+.reviews__title {
+  text-align: center;
+  margin-bottom: rem(22px);
 }
 
 .reviews__list {
@@ -34,7 +35,6 @@
     opacity: 1;
     position: static;
     pointer-events: unset;
-    transition: opacity .2s linear;
   }
   @include phones {
     flex-direction: column;
@@ -79,12 +79,16 @@
 }
 
 .reviews__icon-item {
+  transition: transform .2s linear;
   &:hover, 
   &--active {
     .reviews__icon-img {
       transition: background .2s linear;
       background: $yellow;
     }
+  }
+  &:active {
+    transform: translateY(2px);
   }
 }
 

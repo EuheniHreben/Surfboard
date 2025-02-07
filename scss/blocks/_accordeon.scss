@@ -40,8 +40,8 @@
 
 .accordeon__link {
   position: relative;
-  width: rem(130px);
-  transition: box-shadow .2s ease-in-out;
+  width: rem(160px);
+  transition: box-shadow .4s ease-in-out;
   &:hover {
     box-shadow: 0 0 60px 15px #8ca3ad;
   }
@@ -63,7 +63,7 @@
   position: absolute;
   transform: rotate(-90deg) translateY(-50%);
   transform-origin: 0 0;
-  font-size: rem(40px);
+  font-size: calc(14px + 26 * (100vw / 1280));
   left: 50%;
   font-weight: 600;
   bottom: 20%;

@@ -2,7 +2,7 @@ const swiper = new Swiper('.swiper', {
   direction: 'horizontal',
   loop: true,
   autoplay: {
-    delay: 5000,
+    delay: 4000,
   },
   navigation: {
     nextEl: '.swiper-button-next',

@@ -1,8 +1,5 @@
 .features__list {
   display: flex;
-  & p {
-    margin-left: rem(10px);
-  }
   @include phones {
     display: none; 
   }
@@ -11,7 +8,7 @@
 .features__item {
   align-items: center;
   display: flex;
-  margin-right: rem(30px);
+  margin-right: 30px;
   max-width: rem(150px);
 }
 
@@ -20,4 +17,5 @@
   fill: #fff;
   width: 40px;
   height: 40px;
+  margin-right: 10px;
 }

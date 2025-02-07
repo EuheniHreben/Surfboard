@@ -1,7 +1,7 @@
 body {
   font-size: $baseFontSize;
   @include phones {
-    font-size: $baseFontSize - 2px;
+    font-size: calc(6px + 8 * (100vw / 1280));
   }
 }
 
@@ -74,14 +74,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: rem(72px);
+  font-size: calc(30px + 52 * (100vw / 1280));
   font-weight: bold;
   line-height: 1.2;
 }
 
 h2 {
   display: block;
-  font-size: rem(52px);
+  font-size: calc(20px + 32 * (100vw / 1280));
   font-weight: bold;
   @include phones {
     font-size: rem(36px);
@@ -89,6 +89,6 @@ h2 {
 }
 
 h3 {
-  font-size: rem(24px);
+  font-size: calc(14px + 10 * (100vw / 1280));
   font-weight: bold;
 }

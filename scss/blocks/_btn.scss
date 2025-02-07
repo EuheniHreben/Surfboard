@@ -3,20 +3,20 @@
   text-align: center;
   justify-content: center;
   border: 1px solid transparent;
-  padding: rem(16px) rem(40px);
+  padding: calc(8px + 8 * (100vw / 1280)) calc(24px + 16 * (100vw / 1280));
   margin: rem(4px);
   background-color: $yellow;
   color: $black;
-  font-size: rem(18px);
+  font-size: calc(8px + 8 * (100vw / 1280));;
   font-weight:800;
   border-radius: rem(44px);
   text-transform: uppercase;
   transition: background .2s linear;
   outline: none;
   cursor: pointer; 
-  transition: transform .1s linear;
+  transition: transform .2s linear;
   &:active {
-    transform: translateY(4px);
+    transform: translateY(2px);
   }
 }
 

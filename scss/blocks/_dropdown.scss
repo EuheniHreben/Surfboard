@@ -3,7 +3,7 @@
   display: inline-flex;
   &:hover {
     .dropdown__list {
-      max-height: 250px;
+      max-height: 400px;
       opacity: 1;
     }
   }
@@ -49,9 +49,9 @@
   opacity: 0;
   max-height: 0px;
   background-color: #d6d6d6;
-  padding: rem(10px);
-  border-radius: 5px;
-  width: rem(280px);
+  box-shadow: 4px 4px 5px #cbcbcb;
+  padding: 20px;
+  width: calc(200px + 80 * (100vw / 1280));
   transition: opacity .2s linear;
   transition: max-height .4s ease-out;
   overflow: hidden;
