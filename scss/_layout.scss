@@ -1,5 +1,5 @@
 body {
-  font-size: $baseFontSize;
+  font-size: calc(8px + 10 * (100vw / 1280));
   @include phones {
     font-size: calc(6px + 8 * (100vw / 1280));
   }

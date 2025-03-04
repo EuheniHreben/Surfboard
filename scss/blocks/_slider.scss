@@ -21,7 +21,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: rem(40px);
+  gap: calc(20px + 20 * (100vw / 1280));
   cursor: pointer;
   @include phones {
     flex-direction: column;
@@ -31,9 +31,9 @@
 
 .slider__img-box {
   display: flex;
-  flex-shrink: 0;
+  flex: 1;
+  // flex-shrink: 0;
   justify-content: center;
-  width: 45%;
   @include phones {
     width: 100%;
   }
@@ -41,13 +41,13 @@
 
 .slider__img {
   @include phones {
-    max-height: rem(300px);
+    max-height: calc(100px + 200 * (100vw / 1280));
     margin-right: rem(0px);
   }
 }
 
 .slider__info {
-  max-width: 40%;
+  flex: 1;
   @include phones {
     max-width: 80%;
     text-align: center;
@@ -68,6 +68,7 @@
 .slider__text {
   color: $gray;
   margin-bottom: rem(24px);
+  margin-right: rem(44px);
   @include phones {
     line-height: 1.1;
     width: 80%;
@@ -105,7 +106,7 @@
 }
 
 .slider__price span {
-  font-size: rem(60px);
+  font-size: calc(20px + 40 * (100vw / 1280));
   padding: 0px rem(20px) 0px 0px;
   white-space: nowrap;
   @include phones {

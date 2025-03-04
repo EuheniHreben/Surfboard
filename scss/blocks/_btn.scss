@@ -14,7 +14,7 @@
   transition: background .2s linear;
   outline: none;
   cursor: pointer; 
-  transition: transform .2s linear;
+  transition: transform .1s linear;
   &:active {
     transform: translateY(2px);
   }
