@@ -1,6 +1,6 @@
 .slider {
   background-color: #F8FAF9;
-  padding: rem(30px) 0px;
+  padding: 30px 0px;
   display: flex;
   position: relative;
   align-items: center;
@@ -11,9 +11,7 @@
     margin: 0px;
     border: none;
     box-shadow: none;
-  }
-  @include phones {
-    padding: rem(30px) 0px;
+    overflow: hidden;
   }
 }
 
@@ -21,41 +19,45 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: calc(20px + 20 * (100vw / 1280));
+  gap: 40px;
   cursor: pointer;
   @include phones {
     flex-direction: column;
-    gap: 0px;
+    gap: 10px;
   }
 }
 
 .slider__img-box {
+  flex: 0 1 50%;
   display: flex;
-  flex: 1;
-  // flex-shrink: 0;
   justify-content: center;
   @include phones {
-    width: 100%;
+    flex: 1;
   }
 }
 
 .slider__img {
-  @include phones {
-    max-height: calc(100px + 200 * (100vw / 1280));
-    margin-right: rem(0px);
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  @include tablets {
+    max-height: 80%;
+    max-width: 60%;
   }
 }
 
 .slider__info {
-  flex: 1;
+  flex: 0 1 50%;
   @include phones {
+    flex: 1;
     max-width: 80%;
     text-align: center;
   }
 }
 
 .slider__dropdown {
-  margin-bottom: rem(50px);
+  margin-bottom: 50px;
+
 }
 
 .slider__info h2 {
@@ -67,21 +69,23 @@
 
 .slider__text {
   color: $gray;
+  max-height: 300px;
+  overflow: hidden;
   margin-bottom: rem(24px);
   margin-right: rem(44px);
   @include phones {
+    max-height: 150px;
     line-height: 1.1;
-    width: 80%;
     margin: 10px auto;
   }
 }
 
 .slider__info-list {
   display: flex;
-  margin-bottom: rem(24px);
+  margin-bottom: 24px;
   @include phones {
     justify-content: center;
-    margin-bottom: rem(14px);
+    margin-bottom: 14px;
   }
 }
 
@@ -118,7 +122,7 @@
 .swiper-button-next,
 .swiper-button-prev {
     background-color: transparent;
-    right: 10px;
+    right: -20px;
     padding: 30px;
     color: $gray;
 }

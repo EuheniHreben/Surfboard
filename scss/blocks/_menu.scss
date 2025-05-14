@@ -8,7 +8,7 @@
 .menu__list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   @include phones {
     flex-direction: column;
     text-align: center;

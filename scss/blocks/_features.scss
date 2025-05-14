@@ -1,7 +1,7 @@
 .features__list {
   display: flex;
   @include phones {
-    display: none; 
+    display: none;
   }
 }
 

@@ -7,7 +7,7 @@
       opacity: 1;
     }
   }
-  @include phones {
+  @include tablets {
     display: none;
   }
 }
@@ -19,13 +19,13 @@
   position: relative;
   width: rem(102px);
   height: rem(102px);
-  background: #3A587E;
+  background: #3a587e;
   border-radius: 5px;
   border: none;
   cursor: pointer;
-  transition: background .2s linear;
+  transition: background 0.2s linear;
   &:hover {
-    background: #3465A3;
+    background: #3465a3;
   }
 }
 
@@ -52,8 +52,8 @@
   box-shadow: 4px 4px 5px #cbcbcb;
   padding: 20px;
   width: calc(200px + 80 * (100vw / 1280));
-  transition: opacity .2s linear;
-  transition: max-height .4s ease-out;
+  transition: opacity 0.2s linear;
+  transition: max-height 0.4s ease-out;
   overflow: hidden;
   cursor: pointer;
 }

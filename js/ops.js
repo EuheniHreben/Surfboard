@@ -1,44 +1,40 @@
-const sections = $('section');
-const display = $('.main-content');
-const sideMenu = $('.fixed-menu');
+const sections = $("section");
+const display = $(".main-content");
+const sideMenu = $(".fixed-menu");
 let inScroll = false;
 const mobileDetect = new MobileDetect(window.navigator.userAgent);
 const isMobile = mobileDetect.mobile();
-sections.first().addClass('active');
+sections.first().addClass("active");
 
-const countSectionPosition = sectionEq => {
+const countSectionPosition = (sectionEq) => {
   return sectionEq * -100;
 };
 
-const changeMenuThemeForSection = sectionEq => {
+const changeMenuThemeForSection = (sectionEq) => {
   const currentSection = sections.eq(sectionEq);
-  const menuTheme = currentSection.attr('data-fixed-menu-theme');
-  if (menuTheme === 'dark') {
-    sideMenu.addClass('fixed-menu--dark');
+  const menuTheme = currentSection.attr("data-fixed-menu-theme");
+  if (menuTheme === "dark") {
+    sideMenu.addClass("fixed-menu--dark");
   } else {
-    sideMenu.removeClass('fixed-menu--dark');
+    sideMenu.removeClass("fixed-menu--dark");
   }
-}; 
+};
 
-const changeFixedMenuItem = sectionEq => {
+const changeFixedMenuItem = (sectionEq) => {
   sideMenu
-  .find('.fixed-menu__item')
-  .eq(sectionEq)
-  .addClass('fixed-menu__item--active')
-  .siblings()
-  .removeClass('fixed-menu__item--active');
+    .find(".fixed-menu__item")
+    .eq(sectionEq)
+    .addClass("fixed-menu__item--active")
+    .siblings()
+    .removeClass("fixed-menu__item--active");
 };
 
-const activeSection = sectionEq => {
-  sections
-  .eq(sectionEq)
-  .addClass('active')
-  .siblings()
-  .removeClass('active');
+const activeSection = (sectionEq) => {
+  sections.eq(sectionEq).addClass("active").siblings().removeClass("active");
 };
 
-const performTransition = sectionEq => {
-  if (document.body.classList.contains('locked')) return;
+const performTransition = (sectionEq) => {
+  if (document.body.classList.contains("locked")) return;
   if (inScroll === false) {
     inScroll = true;
     changeMenuThemeForSection(sectionEq);
@@ -48,7 +44,7 @@ const performTransition = sectionEq => {
     const transitionTime = 1000;
     const mouseTime = 300;
     display.css({
-      transform: `translateY(${position}%)`
+      transform: `translateY(${position}%)`,
     });
     setTimeout(() => {
       inScroll = false;
@@ -56,58 +52,58 @@ const performTransition = sectionEq => {
   }
 };
 
-const scrollViewport = direction => {
-  const activeSection = sections.filter('.active');
+const scrollViewport = (direction) => {
+  const activeSection = sections.filter(".active");
   const nextSection = activeSection.next();
   const prevSection = activeSection.prev();
-  if (direction === 'next' && nextSection.length) {
+  if (direction === "next" && nextSection.length) {
     performTransition(nextSection.index());
   }
-  if (direction === 'prev' && prevSection.length) {
+  if (direction === "prev" && prevSection.length) {
     performTransition(prevSection.index());
   }
 };
 
-$(window).on('wheel', e => {
+$(window).on("wheel", (e) => {
   const deltaY = e.originalEvent.deltaY;
   if (deltaY > 0) {
-    scrollViewport('next');
+    scrollViewport("next");
   }
   if (deltaY < 0) {
-    scrollViewport('prev');
+    scrollViewport("prev");
   }
 });
 
-$(window).on('keydown', e => {
+$(window).on("keydown", (e) => {
   const tagName = e.target.tagName.toLowerCase();
-  if (tagName !== 'input' && tagName !== 'textarea') {
+  if (tagName !== "input" && tagName !== "textarea") {
     switch (e.keyCode) {
       case 38:
-        scrollViewport('prev');
-        break
+        scrollViewport("prev");
+        break;
       case 40:
-        scrollViewport('next');
-        break
+        scrollViewport("next");
+        break;
     }
   }
 });
 
-$('.wrapper').on('touchmove', e => e.preventDefault());
+$(".wrapper").on("touchmove", (e) => e.preventDefault());
 
-$('[data-scroll-to]').click(e => {
+$("[data-scroll-to]").click((e) => {
   e.preventDefault();
-  document.body.classList.remove('locked');
+  document.body.classList.remove("locked");
   const $this = $(e.currentTarget);
-  const target = $this.attr('data-scroll-to');
+  const target = $this.attr("data-scroll-to");
   const reqSection = $(`[data-section-id=${target}]`);
   performTransition(reqSection.index());
 });
 
 if (isMobile) {
-  $('body').swipe({
+  $("body").swipe({
     swipe: function (event, direction) {
-      if (direction === 'up') scrollViewport ('next');
-      if (direction === 'down') scrollViewport ('prev');
+      if (direction === "up") scrollViewport("next");
+      if (direction === "down") scrollViewport("prev");
     },
   });
-};
+}

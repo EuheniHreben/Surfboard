@@ -1,6 +1,6 @@
 .logo__img-box {
   @include phones {
-    padding: 0px rem(20px);
+    padding: 0px 20px;
   }
 }
 
@@ -10,7 +10,7 @@
   height: 40px;
   margin-right: rem(50px);
   fill: #fff;
-  transition: fill .2s linear;
+  transition: all 0.2s ease-in-out;
   &:hover {
     fill: $yellow;
   }
