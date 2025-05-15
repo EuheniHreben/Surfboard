@@ -1,5 +1,5 @@
 .accordeon {
-  background: url(../images/background/accordeon.png) center center / cover no-repeat;
+  background: url(../images/background/accordeon.jpg) center center / cover no-repeat;
   display: flex;
   justify-content: center;
   color: #fff;
@@ -64,9 +64,9 @@
 
 .accordeon__link-title {
   position: absolute;
-  transform: rotate(-90deg) translateY(-50%);
+  transform: rotate(-90deg) translate(-100%, -50%);
   transform-origin: 0 0;
-  font-size: calc(14px + 26 * (100vw / 1280));
+  font-size: 28px;
   left: 50%;
   font-weight: 600;
   bottom: 20%;
