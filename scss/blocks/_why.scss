@@ -1,5 +1,5 @@
 .why {
-  padding: rem(100px) 0px;
+  padding: 100px 0px;
   position: relative;
   display: flex;
   align-items: center;
@@ -10,14 +10,14 @@
     letter-spacing: 2px;
   }
   @include phones {
-    padding: rem(40px) 0px;
+    padding: 40px 0px;
   }
 }
 
 .why__subtitle {
   color: #666;
   max-width: 50%;
-  margin: 0px auto rem(50px) auto;
+  margin: 0px auto 50px auto;
   text-align: center;
   @include phones {
     max-width: 90%;
@@ -52,9 +52,9 @@
 
 @media (hover: hover) and (pointer: fine) {
   .why__item:hover {
-    transform: scale(1.15);
-    .why__img {
-      fill: #000;
+    transform: scale(1.1);
+    .why__img-box {
+      box-shadow: 2px 2px 24px #d1d4d3;
     }
   }
 }
@@ -69,6 +69,8 @@
   border-radius: 50%;
   margin-bottom: rem(20px);
   flex-shrink: 0;
+  box-shadow: 1px 1px 14px #d1d4d3;
+  transition: box-shadow .2s ease-in;
   @include phones {
     margin-bottom: 0px;
   }
@@ -77,11 +79,8 @@
 .why__img {
   width: 68px;
   height: 68px;
-  fill: #444;
+  fill: #000;
   transition: all 0.2s;
-  @include tablets {
-    fill: #000;
-  }
 }
 
 .why__desc {

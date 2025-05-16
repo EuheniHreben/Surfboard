@@ -9,21 +9,18 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
+  gap: 20px;
   @include phones {
     flex-direction: column;
     text-align: center;
-    font-size: rem(40px);
     color: #fff;
-    margin-bottom: 20px;
   }
 }
 
 .menu__link {
-  margin-right: rem(20px);
   font-weight: bold;
-  font-size: calc(10px + 10 * (100vw / 1280));
-  text-decoration: none;
-  transition: text-decoration 12s linear;
+  font-size: 20px;
+  transition: text-decoration 0.2s ease-in;
   position: relative;
   &::before {
     content: "";
@@ -34,15 +31,14 @@
     height: 2px;
     background-color: #fff;
     opacity: 0;
-    transition: opacity .2s linear;
+    transition: opacity 0.2s linear;
   }
   &:hover {
-   &::before {
-    opacity: .8;
-   }
+    &::before {
+      opacity: 0.8;
+    }
   }
   @include phones {
-    margin-right: 0px;
+    font-size: 40px;
   }
 }
-
