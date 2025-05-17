@@ -3,11 +3,11 @@
   padding-top: rem(30px);
   position: relative;
   padding-bottom: rem(60px);
-  background: url(../images/background/bg.png) center center / cover no-repeat;
+  background: url(../images/background/bg.jpg) center center / cover no-repeat;
   @include phones {
     padding-top: rem(0px);
     padding-bottom: rem(0px);
-    background: url(../images/background/bg-mini.png) center center / cover
+    background: url(../images/background/bg-mini.jpg) center center / cover
       no-repeat;
   }
 }

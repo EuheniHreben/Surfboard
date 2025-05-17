@@ -401,12 +401,12 @@ h3 {
   padding-top: 1.6666666667rem;
   position: relative;
   padding-bottom: 3.3333333333rem;
-  background: url(../images/background/bg.png) center center/cover no-repeat; }
+  background: url(../images/background/bg.jpg) center center/cover no-repeat; }
   @media (max-width: 480px) {
     .hero {
       padding-top: 0rem;
       padding-bottom: 0rem;
-      background: url(../images/background/bg-mini.png) center center/cover no-repeat; } }
+      background: url(../images/background/bg-mini.jpg) center center/cover no-repeat; } }
 
 .hero-container {
   display: -webkit-box;
