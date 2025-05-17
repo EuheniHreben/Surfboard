@@ -34,7 +34,7 @@
 }
   
 .team__name {
-  font-size: calc(8px + 10 * (100vw / 1280));
+  font-size: 18px;
   font-weight: bold;
   text-align: center;
   margin-bottom: 10px;
@@ -88,8 +88,8 @@
   margin-bottom: 24px;
   width: 100%;
   @include phones {
-    max-width: rem(138px);
-    max-height: rem(220px);
+    max-width: 138px;
+    max-height: 220px;
   }
 }
 

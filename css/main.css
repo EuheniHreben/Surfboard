@@ -746,7 +746,7 @@ path {
     letter-spacing: 2px; }
   @media (max-width: 480px) {
     .why {
-      padding: 40px 0px; } }
+      padding: 40px 10px; } }
 
 .why__subtitle {
   color: #666;
@@ -1013,9 +1013,13 @@ path {
 .swiper-button-next,
 .swiper-button-prev {
   background-color: transparent;
-  right: -20px;
+  right: -18px;
   padding: 30px;
   color: #666666; }
+  @media (max-width: 480px) {
+    .swiper-button-next,
+    .swiper-button-prev {
+      right: 0px; } }
 
 .form {
   background: url(../images/background/reviews-bg.jpg) center center/cover no-repeat;
@@ -1447,7 +1451,7 @@ path {
       margin-right: 0px; } }
 
 .team__name {
-  font-size: calc(8px + 10 * (100vw / 1280));
+  font-size: 18px;
   font-weight: bold;
   text-align: center;
   margin-bottom: 10px;
@@ -1508,8 +1512,8 @@ path {
   width: 100%; }
   @media (max-width: 480px) {
     .team__img-mini {
-      max-width: 7.6666666667rem;
-      max-height: 12.2222222222rem; } }
+      max-width: 138px;
+      max-height: 220px; } }
 
 .team__desc {
   height: 0;

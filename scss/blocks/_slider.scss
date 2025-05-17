@@ -122,7 +122,10 @@
 .swiper-button-next,
 .swiper-button-prev {
     background-color: transparent;
-    right: -20px;
+    right: -18px;
     padding: 30px;
     color: $gray;
+    @include phones {
+      right: 0px;
+    }
 }
