@@ -1,12 +1,12 @@
 .hero {
   color: #fff;
-  padding-top: rem(30px);
+  padding-top: 30px;
   position: relative;
-  padding-bottom: rem(60px);
+  padding-bottom: 60px;
   background: url(../images/background/bg.jpg) center center / cover no-repeat;
   @include phones {
-    padding-top: rem(0px);
-    padding-bottom: rem(0px);
+    padding-top: 0px;
+    padding-bottom: 0px;
     background: url(../images/background/bg-mini.jpg) center center / cover
       no-repeat;
   }

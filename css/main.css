@@ -398,14 +398,14 @@ h3 {
 
 .hero {
   color: #fff;
-  padding-top: 1.6666666667rem;
+  padding-top: 30px;
   position: relative;
-  padding-bottom: 3.3333333333rem;
+  padding-bottom: 60px;
   background: url(../images/background/bg.jpg) center center/cover no-repeat; }
   @media (max-width: 480px) {
     .hero {
-      padding-top: 0rem;
-      padding-bottom: 0rem;
+      padding-top: 0px;
+      padding-bottom: 0px;
       background: url(../images/background/bg-mini.jpg) center center/cover no-repeat; } }
 
 .hero-container {
@@ -626,7 +626,6 @@ path {
   display: -ms-inline-flexbox;
   display: inline-flex;
   text-align: center;
-  border: 1px solid transparent;
   padding: 18px 36px;
   margin: 4px;
   background-color: #fedb3f;
@@ -637,7 +636,6 @@ path {
   font-weight: 800;
   border-radius: 44px;
   text-transform: uppercase;
-  outline: none;
   cursor: pointer;
   position: relative;
   top: 0;
