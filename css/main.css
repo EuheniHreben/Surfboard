@@ -629,11 +629,12 @@ path {
   padding: 18px 36px;
   margin: 4px;
   background-color: #fedb3f;
-  -webkit-box-shadow: 0px 4px #ddbe36;
-          box-shadow: 0px 4px #ddbe36;
+  -webkit-box-shadow: 0px 5px #ddbe36;
+          box-shadow: 0px 5px #ddbe36;
   color: #292929;
   font-size: 16px;
   font-weight: 800;
+  border: none;
   border-radius: 44px;
   text-transform: uppercase;
   cursor: pointer;
@@ -648,8 +649,8 @@ path {
 
 .btn_type_second {
   background: #666;
-  -webkit-box-shadow: 0px 4px #555;
-          box-shadow: 0px 4px #555; }
+  -webkit-box-shadow: 0px 5px #555;
+          box-shadow: 0px 5px #555; }
   .btn_type_second:active {
     top: 3px;
     -webkit-box-shadow: 0px 1px #555;
@@ -1011,7 +1012,6 @@ path {
 .swiper-button-next,
 .swiper-button-prev {
   background-color: transparent;
-  right: -18px;
   padding: 30px;
   color: #666666; }
   @media (max-width: 480px) {
@@ -1118,7 +1118,7 @@ path {
     border-color: #fedb3f; }
   @media (max-width: 480px) {
     .form__input {
-      padding: 0.5555555556rem 0.6666666667rem; } }
+      padding: 10px 12px; } }
 
 .form__input--textarea {
   width: 100%;
