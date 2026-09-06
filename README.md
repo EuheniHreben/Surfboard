@@ -1,7 +1,5 @@
 # 🏄‍♂️ Surfboard — Premium Interactive Landing Page
 
-[![Live Demo](https://shields.io)](https://euhenihreben.github.io/Surfboard/)
-
 ## 💼 Project Description
 
 [![Кликните, чтобы открыть сайт](./preview.jpg)](https://euhenihreben.github.io/Surfboard/)
